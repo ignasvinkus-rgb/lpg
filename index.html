@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LPG masažas Klaipėdoje – sertifikuota LPG Alliance kūno procedūra kūno kontūrams, odos stangrumui ir lengvumo pojūčiui. Kaina nuo 35 €. Registruokitės „Kūno Linija“ kabinete.">
+    <title>LPG masažas Klaipėdoje | Kūno Linija – LPG Alliance procedūra</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HealthAndBeautyBusiness",
+      "name": "Kūno Linija",
+      "description": "LPG Alliance kūno procedūra Klaipėdoje – kūno kontūrai, odos stangrumas, limfos tekėjimas.",
+      "address": { "@type": "PostalAddress", "streetAddress": "Šermukšnių g. 15", "addressLocality": "Klaipėda", "addressCountry": "LT" },
+      "telephone": "+37063656181",
+      "geo": { "@type": "GeoCoordinates", "latitude": 55.6982418, "longitude": 21.1390067 },
+      "priceRange": "nuo 35 €",
+      "areaServed": "Klaipėda"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Kiek trunka viena LPG procedūra?", "acceptedAnswer": { "@type": "Answer", "text": "LPG Express procedūra trunka 20 minučių, o pilna kūno procedūra – 45 minutes." } },
+        { "@type": "Question", "name": "Kiek procedūrų rekomenduojama?", "acceptedAnswer": { "@type": "Answer", "text": "Pagal tikslą dažniausiai rekomenduojamas 5–10 procedūrų kursas." } },
+        { "@type": "Question", "name": "Ar LPG masažas skausmingas?", "acceptedAnswer": { "@type": "Answer", "text": "Procedūra neinvazinė ir dažniausiai patiriama kaip malonus, atpalaiduojantis masažas. Intensyvumas parenkamas individualiai." } },
+        { "@type": "Question", "name": "Kiek kainuoja LPG masažas Klaipėdoje?", "acceptedAnswer": { "@type": "Answer", "text": "LPG Express procedūra kainuoja 20 €, vienkartinė pilna procedūra – 35 €. 5 procedūrų kursas kainuoja 160 € (32 € už procedūrą), o 10 procedūrų kursas – 300 € (30 € už procedūrą)." } }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ===== TOKENS – vieninga šilta boutique paletė (cream + warm brown + gold + nude CTA) ===== */
+        :root {
+            --color-bg: #F3EEE8;          /* pagrindinis cream */
+            --color-bg-alt: #EDE5DD;      /* minkštas šiltas fonas */
+            --color-surface: #FFFFFF;     /* baltos kortelės */
+            --color-surface-soft: #FBF7F2;/* šiltas off-white */
+            --color-border: #D8CCC1;      /* numatytas rėmelis */
+            --color-border-strong: #BFAE9F;/* stipresnis šiltas rėmelis */
+            --color-text: #5F4C42;        /* kūno tekstas – šiltas tamsus ruda (gerai įskaitomas) */
+            --color-heading: #4B382F;     /* antraštės – gilus ruda */
+            --color-espresso: #2E211D;    /* tamsi ruda (dark split) */
+            --color-brand-black: #151412; /* charcoal (header/footer) */
+            --color-muted: #756963;       /* pritildytas tekstas / smulkios etiketės */
+            --color-gold: #C9A46A;        /* švelnus auksas (dekoratyvai: numeriai, žvaigždutės, linijos) */
+            --color-gold-dark: #B88A52;   /* pagrindinis sodresnis auksas (smulkus tekstas/akcentai) */
+            --color-cta: #D19475;         /* nude/peach CTA */
+            --color-cta-hover: #C78362;
+
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+            --maxw: 1200px;
+            --header-h: 76px;
+            --section-pad: clamp(64px, 9vw, 120px);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0; padding: 0;
+            font-family: var(--font-sans);
+            font-weight: 300;
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.8;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 500; color: var(--color-heading); margin: 0; line-height: 1.15; }
+        h1 em, h2 em, h3 em { font-style: italic; color: var(--color-gold); }
+        p { margin: 0 0 1em; }
+        a { color: inherit; }
+        img, iframe { max-width: 100%; }
+        a:focus-visible, button:focus-visible, summary:focus-visible {
+            outline: 2px solid var(--color-gold); outline-offset: 3px; border-radius: 3px;
+        }
+
+        .container { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+        /* Anchor poslinkis po fiksuotu header – visi id taikiniai (ne tik <section>) */
+        section, [id] { scroll-margin-top: calc(var(--header-h) + 16px); }
+
+        .label {
+            display: inline-block;
+            font-family: var(--font-sans);
+            font-size: 0.72rem; font-weight: 600;
+            letter-spacing: 3.5px; text-transform: uppercase;
+            color: var(--color-gold-dark);
+            margin-bottom: 18px;
+        }
+        .label--light { color: var(--color-gold); }
+
+        /* ===== BUTTONS ===== */
+        .btn-cta, .btn-ghost, .btn-line {
+            display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+            font-family: var(--font-sans); font-size: 0.8rem; font-weight: 600;
+            letter-spacing: 2px; text-transform: uppercase; text-decoration: none;
+            padding: 16px 34px; cursor: pointer; border: 1px solid transparent;
+            transition: background-color .15s ease, color .15s ease, border-color .15s ease;
+        }
+        .btn-cta { background: var(--color-cta); color: #fff; }
+        .btn-cta:hover { background: var(--color-cta-hover); }
+        .btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,0.6); }
+        .btn-ghost:hover { background: #fff; color: var(--color-espresso); }
+        .btn-line { background: transparent; color: var(--color-espresso); border-color: var(--color-espresso); }
+        .btn-line:hover { background: var(--color-espresso); color: var(--color-bg); }
+        .btn-cta svg, .btn-ghost svg { width: 15px; height: 15px; fill: currentColor; }
+        /* „Aurora" švytėjimas aplink „Registruotis vizitui" mygtukus – šiltas auksinis/peach (gryna CSS) */
+        .js-open-booking { position: relative; }
+        .js-open-booking::before {
+            content: ""; position: absolute; inset: -3px; border-radius: inherit; z-index: -1; pointer-events: none;
+            background: linear-gradient(110deg, var(--color-gold), var(--color-cta), var(--color-gold-dark), var(--color-cta), var(--color-gold));
+            background-size: 220% 100%;
+            filter: blur(11px); opacity: 0.45;
+            transition: opacity .35s ease, filter .35s ease;
+            animation: auroraShift 7s linear infinite;
+        }
+        .js-open-booking:hover::before, .js-open-booking:focus-visible::before { opacity: 0.85; filter: blur(15px); }
+        @keyframes auroraShift { to { background-position: 220% 0; } }
+        @media (prefers-reduced-motion: reduce) { .js-open-booking::before { animation: none; } }
+
+        /* ===== HEADER ===== */
+        .site-header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            height: var(--header-h);
+            background: transparent;
+            border-bottom: 1px solid transparent;
+            transition: background-color .16s ease, border-color .16s ease, box-shadow .16s ease;
+        }
+        /* Subtilus tamsėjimas viršuje, kad nav būtų įskaitomas ant šviesesnio fono */
+        .site-header::before {
+            content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+            background: linear-gradient(to bottom, rgba(18,17,16,0.45), rgba(18,17,16,0));
+            opacity: 1; transition: opacity .16s ease;
+        }
+        .site-header.is-scrolled {
+            background: #141311; /* pilnai neperšviečiamas – jokio FAQ teksto pralindimo */
+            border-bottom-color: rgba(200, 160, 95, 0.18);
+            box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+        }
+        .site-header.is-scrolled::before { opacity: 0; }
+        .site-header.is-open { background: #141311; }
+        .header-inner {
+            max-width: var(--maxw); margin: 0 auto; height: 100%;
+            padding: clamp(1.35rem, 2vw, 1.75rem) 24px 0; /* daugiau oro viršuje – turinys nuleistas */
+            display: flex; align-items: center; justify-content: space-between; gap: 20px;
+        }
+        /* Centruotas logotipas: lygiavertės pusės, logo viduryje */
+        .brand {
+            flex: 0 0 auto;
+            font-family: var(--font-serif); font-size: 1.6rem; font-weight: 500;
+            letter-spacing: 1.5px; color: #fff; text-decoration: none; white-space: nowrap;
+        }
+        .brand span { color: var(--color-gold); }
+        .main-nav { display: flex; align-items: center; gap: 28px; }
+        .main-nav.nav-left  { flex: 1 1 0; justify-content: flex-start; }
+        .main-nav.nav-right { flex: 1 1 0; justify-content: flex-end; }
+        .main-nav a {
+            font-family: var(--font-sans); font-size: 0.95rem; font-weight: 600;
+            letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.85);
+            text-decoration: none; transition: color .2s ease;
+        }
+        .main-nav a:hover { color: var(--color-gold); }
+        .nav-toggle {
+            display: none; width: 42px; height: 42px; border: none; background: transparent; cursor: pointer;
+            flex-direction: column; justify-content: center; align-items: center; gap: 5px;
+        }
+        .nav-toggle span { width: 24px; height: 2px; background: #fff; border-radius: 2px; transition: .3s; }
+
+        /* ===== HERO ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex; flex-direction: column; justify-content: flex-end;
+            padding-top: calc(var(--header-h) + 40px);
+            color: #fff;
+            overflow: hidden;
+        }
+        /* VAIZDO sluoksnis – tik jis animuojamas (zoom + pan) */
+        .hero::before {
+            content: ""; position: absolute; inset: 0; z-index: 0;
+            /* Pirmenybė aukštos raiškos failui; jei jo nėra – graceful fallback į PNG */
+            background-image:
+                url('images/fonas-hero.webp'),
+                url('images/fonas-hero.jpg'),
+                url('images/fonas.png');
+            background-size: cover; background-position: center 65%; background-repeat: no-repeat;
+            transform-origin: center center;
+            transform: scale(1.04) translate3d(0, 0, 0);
+            will-change: transform;
+            animation: heroImageMotion 6.5s linear infinite alternate;
+        }
+        /* PERDANGA + dither – stabili, neanimuojama, virš vaizdo, po tekstu.
+           Subtilus SVG triukšmas (opacity 0.04) suardo 8-bit gradiento juostas (banding). */
+        .hero::after {
+            content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+            background-image:
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"),
+                linear-gradient(90deg,
+                    rgba(8, 6, 5, 0.74) 0%,
+                    rgba(8, 6, 5, 0.62) 28%,
+                    rgba(8, 6, 5, 0.42) 52%,
+                    rgba(8, 6, 5, 0.30) 72%,
+                    rgba(8, 6, 5, 0.56) 100%);
+            background-size: 140px 140px, cover;
+            background-repeat: repeat, no-repeat;
+        }
+        @keyframes heroImageMotion {
+            0%   { transform: scale(1.04) translate3d(0, 0, 0); }
+            18%  { transform: scale(1.06) translate3d(-0.5%, -0.3%, 0); }
+            100% { transform: scale(1.10) translate3d(-1.8%, -1.1%, 0); }
+        }
+        .hero > * { position: relative; z-index: 1; }
+        .hero-inner { max-width: var(--maxw); margin: 0 auto; width: 100%; padding: 0 24px 32px; flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        .hero h1 {
+            color: #fff;
+            font-weight: 400;
+            font-size: clamp(4.8rem, 6.4vw, 7.8rem);
+            line-height: 0.95; letter-spacing: -0.018em;
+            margin-bottom: 0; max-width: 1100px;
+            overflow-wrap: break-word;
+        }
+        .hero-body { max-width: 760px; font-size: clamp(1rem, 1.05vw, 1.18rem); line-height: 1.55; color: rgba(255,255,255,0.84); margin-top: 1.5rem; margin-bottom: 0; }
+        .hero-cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 2.2rem; }
+
+        /* Hero antraštė – dvi vizualinės eilutės; žodžiai atskleidžiami po vieną */
+        .hero h1 .hero-line { display: block; }
+        .hero h1 .word { display: inline-block; }
+        /* Hover efektas – kiekviena raidė pakyla + padidėja (pakopinė delsa nustatoma JS) */
+        .hchar { display: inline-block; transition: transform .3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        @media (prefers-reduced-motion: no-preference) {
+            .hero h1:hover .hchar { transform: translateY(-4px) scale(1.18); }
+            .hero-body:hover .hchar { transform: translateY(-3px) scale(1.2); }
+        }
+
+        /* Premium, lėtas hero įėjimas (Rafaela Salvato stilius) – tik kai leidžiamas judesys.
+           Be šio media bloko (reduced-motion / be JS) turinys matomas iškart. */
+        @keyframes wordRise    { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes heroRiseSub { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes heroRiseCta { from { opacity: 0; transform: translateY(12px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+        @media (prefers-reduced-motion: no-preference) {
+            /* H1 žodis po žodžio: LPG → masažas → Klaipėdoje */
+            .hero h1 .word { opacity: 0; animation: wordRise 1s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+            .hero h1 .hero-line:nth-child(1) .word:nth-child(1) { animation-delay: .10s; }
+            .hero h1 .hero-line:nth-child(1) .word:nth-child(2) { animation-delay: .32s; }
+            .hero h1 .hero-line:nth-child(2) .word:nth-child(1) { animation-delay: .54s; }
+            /* Paantraštė po H1 žodžių, paskui CTA */
+            .hero-body { opacity: 0; animation: heroRiseSub .72s cubic-bezier(0.22, 1, 0.36, 1) 1s   forwards; }
+            .hero-cta  { opacity: 0; animation: heroRiseCta .72s cubic-bezier(0.22, 1, 0.36, 1) 1.3s forwards; }
+        }
+        /* Mobiliesiems – mažesnis žodžių poslinkis */
+        @media (prefers-reduced-motion: no-preference) and (max-width: 700px) {
+            @keyframes wordRise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        }
+
+        /* ===== EDITORIAL SPLIT (intro) ===== */
+        .editorial { padding: var(--section-pad) 0; }
+        .split2 { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 90px); align-items: center; }
+        .split2 h2 { font-size: clamp(1.9rem, 4vw, 3rem); margin-bottom: 22px; }
+        .split2 p { max-width: 540px; }
+        .split2 .btn-line { margin-top: 12px; }
+        .media {
+            position: relative;
+        }
+        .media img, .media video { display: block; width: 100%; height: 100%; min-height: 420px; object-fit: cover; object-position: center 60%; }
+        .media::after { content: ""; position: absolute; inset: 0; border: 1px solid rgba(199,163,106,0.4); pointer-events: none; }
+        /* Editorial („Apie procedūrą") media – kontroliuojamas premium kadras; aukštesnis, kad matytųsi pati procedūra (ne tik aparato detalė) */
+        .editorial .media { width: 100%; aspect-ratio: 5 / 4; max-height: 600px; overflow: hidden; }
+        .editorial .media img, .editorial .media video { height: 100%; min-height: 0; object-fit: cover; object-position: center 70%; }
+        /* Tik šios sekcijos video spalvinis apdorojimas – šiltas, bet ne oranžinis; mažiau telefono prisotinimo, premium spa pojūtis */
+        .editorial .media video { filter: brightness(0.96) contrast(1.07) saturate(0.84) sepia(0.05); }
+
+        /* ===== DIFFERENCE ===== */
+        .difference { background: var(--color-bg-alt); }
+        .diff-grid {
+            max-width: 1400px; margin: 0 auto;
+            display: grid;
+            grid-template-columns: minmax(420px, 520px) minmax(620px, 760px);
+            gap: clamp(60px, 7vw, 110px);
+            align-items: start;
+            padding: clamp(72px, 9vw, 110px) 32px clamp(80px, 10vw, 120px);
+        }
+        .diff-intro { max-width: 520px; }
+        .diff-intro h2 { font-size: clamp(2rem, 3.4vw, 2.9rem); line-height: 1.12; margin-bottom: 18px; }
+        .diff-intro p { max-width: 44ch; font-size: 1.05rem; line-height: 1.7; color: var(--color-text); margin: 0; }
+        /* Vertikalus numeruotas sąrašas – be tinklelio, be kortelių */
+        .diff-list { display: flex; flex-direction: column; gap: clamp(30px, 3.5vw, 39px); }
+        .diff-item {
+            display: grid;
+            grid-template-columns: 74px minmax(0, 1fr);
+            column-gap: 30px;
+            align-items: start;
+        }
+        /* Numeris apima abi eilutes; antraštė ir tekstas lieka plačiame stulpelyje */
+        .diff-num {
+            grid-row: 1 / 3; align-self: start;
+            font-family: var(--font-serif); font-weight: 400;
+            font-size: clamp(2.7rem, 3.4vw, 3.3rem); line-height: 1;
+            color: var(--color-gold); opacity: 0.85;
+        }
+        .diff-item h3 {
+            grid-column: 2;
+            font-size: clamp(1.4rem, 1.8vw, 1.7rem); line-height: 1.2;
+            color: var(--color-heading); margin: 0 0 10px;
+        }
+        .diff-item p {
+            grid-column: 2; min-width: 0; max-width: 50ch;
+            font-size: 1.08rem; line-height: 1.7; color: var(--color-text); margin: 0;
+        }
+        /* Stack'inam anksčiau, kad standūs minmax stulpeliai neperlįstų */
+        @media (max-width: 1180px) {
+            .diff-grid {
+                grid-template-columns: 1fr;
+                gap: clamp(40px, 6vw, 64px);
+                padding: clamp(64px, 9vw, 96px) 24px clamp(72px, 10vw, 104px);
+            }
+            .diff-intro { max-width: 640px; }
+        }
+
+        /* ===== DARK SPLIT ===== */
+        .dark-split { display: grid; grid-template-columns: 1fr 1fr; }
+        .dark-split .media img { min-height: 460px; }
+        .dark-split .media::after { border: none; }
+        /* „Featured Spotlight" – įrėminta nuotrauka su kampų akcentais (hover, gryna CSS) – „Mūsų kabinetas" */
+        .spotlight-media { display: flex; align-items: center; justify-content: center; min-height: 460px; padding: clamp(24px, 4vw, 48px); }
+        .spotlight { position: relative; margin: 0; --sp-ease: cubic-bezier(0.16, 1, 0.3, 1); }
+        /* Plonas rėmelis aplink (atsiranda užvedus) */
+        .sp-frame { position: absolute; inset: -16px; border: 1px solid transparent; transition: border-color .7s var(--sp-ease), transform .7s var(--sp-ease); pointer-events: none; }
+        .sp-imgwrap { position: relative; width: min(380px, 78vw); aspect-ratio: 5 / 6; overflow: hidden; transition: box-shadow .7s var(--sp-ease), transform .7s var(--sp-ease); }
+        .sp-imgwrap img { width: 100%; height: 100%; min-height: 0; object-fit: cover; object-position: center 55%; display: block; transition: transform 1s var(--sp-ease); }
+        .sp-grad { position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,6,5,0.18), transparent 45%); opacity: 0; transition: opacity .7s var(--sp-ease); pointer-events: none; }
+        /* Kampų akcentai (balti brūkšneliai) */
+        .sp-corner { position: absolute; background: rgba(255,255,255,0.85); opacity: 0; transition: opacity .5s var(--sp-ease), transform .5s var(--sp-ease); }
+        .sp-tl-v { left: 12px; top: 12px; width: 1px; height: 24px; transform: scaleY(0); transform-origin: top; transition-delay: .05s; }
+        .sp-tl-h { left: 12px; top: 12px; height: 1px; width: 24px; transform: scaleX(0); transform-origin: left; transition-delay: .1s; }
+        .sp-br-v { right: 12px; bottom: 12px; width: 1px; height: 24px; transform: scaleY(0); transform-origin: bottom; transition-delay: .15s; }
+        .sp-br-h { right: 12px; bottom: 12px; height: 1px; width: 24px; transform: scaleX(0); transform-origin: right; transition-delay: .2s; }
+        /* Indekso numeris */
+        .sp-index { position: absolute; right: 0; bottom: -34px; font-family: var(--font-sans); font-size: 0.82rem; letter-spacing: 1px; color: var(--color-muted); opacity: 0.45; transition: opacity .7s var(--sp-ease), transform .7s var(--sp-ease); }
+        /* Hover (grupė = visa sekcija) */
+        .dark-split:hover .sp-imgwrap { transform: translate(4px, -4px); box-shadow: 0 26px 60px rgba(21,17,15,0.20); }
+        .dark-split:hover .sp-imgwrap img { transform: scale(1.04); }
+        .dark-split:hover .sp-frame { border-color: rgba(75,56,47,0.18); transform: scale(1.01); }
+        .dark-split:hover .sp-grad { opacity: 1; }
+        .dark-split:hover .sp-corner { opacity: 1; transform: scale(1); }
+        .dark-split:hover .sp-index { opacity: 1; transform: translateY(10px); }
+        @media (prefers-reduced-motion: reduce) {
+            .sp-imgwrap, .sp-imgwrap img, .sp-frame, .sp-grad, .sp-corner, .sp-index { transition: none; }
+        }
+        .dark-panel {
+            background: var(--color-espresso); color: #fff;
+            display: flex; flex-direction: column; justify-content: center;
+            padding: clamp(48px, 7vw, 96px) clamp(28px, 5vw, 80px);
+            position: relative; overflow: hidden; z-index: 0;
+        }
+        .dark-panel h2 { color: #fff; font-size: clamp(1.9rem, 4vw, 3rem); margin-bottom: 22px; }
+        .dark-panel h2 em { color: var(--color-gold); }
+        .dark-panel p { color: rgba(246, 239, 232, 0.82); max-width: 520px; }
+        .dark-panel .btn-ghost { align-self: flex-start; margin-top: 14px; }
+
+        /* ===== SECTION HEAD (centered) ===== */
+        .sec { padding: var(--section-pad) 0; }
+        /* FAQ ritmas: subalansuotas apatinis tarpas (ne nukirstas), intencionalus perėjimas į tamsią sekciją */
+        #duk { padding-bottom: clamp(36px, 4.5vw, 56px); }
+        /* FAQ: mažesnis tarpas tarp antraštės ir pirmos eilutės (mažas heading blokas) */
+        #duk .sec-head { margin-bottom: clamp(22px, 3vw, 34px); }
+        .sec-head { max-width: 700px; margin: 0 auto clamp(40px, 6vw, 64px); text-align: center; }
+        .sec-head h2 { font-size: clamp(1.9rem, 4.2vw, 3rem); }
+        .sec-alt { background: var(--color-bg-alt); }
+
+        /* ===== USE CASES (3 editorial cols) ===== */
+        /* Kompaktiškesni tarpai šioje sekcijoje (neliečiant globalaus .sec) */
+        #kam-tinka { padding-top: clamp(44px, 6vw, 72px); padding-bottom: clamp(56px, 7vw, 84px); }
+        #kam-tinka .sec-head { margin-bottom: clamp(30px, 4vw, 44px); }
+        #kam-tinka .sec-head h2 { font-size: clamp(1.8rem, 3.2vw, 2.5rem); }
+        .cols3 { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: clamp(28px, 3.5vw, 48px); row-gap: clamp(32px, 4vw, 44px); }
+        .ucase { padding-top: 0; }
+        .ucase .n { font-family: var(--font-serif); font-size: 1rem; color: var(--color-gold-dark); letter-spacing: 1px; }
+        .ucase h3 { font-size: 1.3rem; margin: 9px 0 9px; }
+        .ucase p { font-size: 0.95rem; margin: 0; line-height: 1.7; }
+        @media (max-width: 980px) { .cols3 { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .cols3 { grid-template-columns: 1fr; } }
+
+        /* ===== REALŪS REZULTATAI (galerija + lightbox) ===== */
+        #rezultatai { padding-top: clamp(40px, 5vw, 64px); padding-bottom: clamp(48px, 6vw, 76px); }
+        #rezultatai .sec-head { margin-bottom: clamp(20px, 2.6vw, 30px); }
+        /* Karuselė su rodyklėmis. Skaidrės KINTAMO pločio pagal natūralias proporcijas:
+           vienodas aukštis, img height:100% width:auto → jokio kirpimo, jokių baltų juostų. */
+        /* Šoniniai tarpeliai (gutter) rodyklėms – kad jos nebūtų ant nuotraukų */
+        .results-carousel { position: relative; max-width: 1120px; margin: 0 auto; padding: 0 56px; }
+        .rc-track { display: flex; align-items: stretch; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-left: 0; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: 2px 0; }
+        .rc-track::-webkit-scrollbar { display: none; }
+        /* Fiksuota vienodo pločio skaidrė: desktop tiksliai 3 per eilę (kiekviena ~1/3 galerijos).
+           Kompaktiška; contain + kreminis (sekcijos) fonas → visa nuotrauka, be tempimo, be baltų šonų. */
+        .result-slide { flex: 0 0 calc((100% - 40px) / 3); height: 280px; scroll-snap-align: start; display: block; padding: 0; margin: 0; border: 1px solid var(--color-border); border-radius: 0; -webkit-appearance: none; appearance: none; background: var(--color-bg); cursor: pointer; overflow: hidden; line-height: 0; transition: border-color .3s ease, box-shadow .3s ease; }
+        .result-slide:hover, .result-slide:focus-visible { border-color: var(--color-gold); box-shadow: 0 8px 22px rgba(47,36,33,0.12); outline: none; }
+        /* contain – nuotrauka telpa visa, centruota, neištempta; kreminiai kraštai susilieja su sekcija */
+        .result-slide img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; }
+        /* Rodyklės – šiltos (espresso → auksas) */
+        .rc-nav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 6; width: 46px; height: 46px; border-radius: 50%; border: none; background: var(--color-espresso); color: #fff; font-size: 1.5rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(47,36,33,0.25); transition: background-color .2s ease, color .2s ease, opacity .2s ease; }
+        .rc-nav:hover, .rc-nav:focus-visible { background: var(--color-gold); color: var(--color-brand-black); outline: none; }
+        .rc-nav[disabled] { opacity: 0; pointer-events: none; }
+        /* Rodyklės – šoniniuose tarpeliuose, ne ant nuotraukų */
+        .rc-prev { left: 4px; } .rc-next { right: 4px; }
+        .results-note { text-align: center; margin: 26px auto 0; max-width: 560px; font-size: 0.8rem; color: var(--color-muted); opacity: 0.85; }
+        @media (max-width: 900px) {
+            .results-carousel { padding: 0 48px; }
+            .result-slide { flex: 0 0 calc((100% - 20px) / 2); height: 300px; } /* planšetė: 2 pilnos */
+            .rc-nav { width: 42px; height: 42px; }
+        }
+        @media (max-width: 480px) {
+            .results-carousel { padding: 0 42px; }
+            .result-slide { flex: 0 0 100%; height: 320px; } /* mobilus: 1 pilna */
+            .rc-nav { width: 38px; height: 38px; }
+        }
+        /* Lightbox (didesnė peržiūra) */
+        .lightbox { position: fixed; inset: 0; z-index: 2500; display: flex; align-items: center; justify-content: center; padding: 24px; background: rgba(21,17,15,0.86); backdrop-filter: blur(4px); }
+        .lightbox[hidden] { display: none; }
+        .lightbox-img { max-width: min(94vw, 1100px); max-height: 90vh; width: auto; height: auto; object-fit: contain; box-shadow: 0 30px 80px rgba(0,0,0,0.5); background: var(--color-surface); }
+        .lightbox-close { position: absolute; top: 18px; right: 22px; width: 46px; height: 46px; border: 1px solid rgba(255,255,255,0.4); background: rgba(0,0,0,0.25); color: #fff; font-size: 1.9rem; line-height: 1; cursor: pointer; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: background-color .2s ease, border-color .2s ease; }
+        .lightbox-close:hover, .lightbox-close:focus-visible { background: var(--color-gold); border-color: var(--color-gold); color: var(--color-brand-black); outline: none; }
+
+        /* ===== PROCESS ===== */
+        /* Kompaktiškesni tarpai (neliečiant globalaus .sec) */
+        #procesas { padding-top: clamp(44px, 6vw, 72px); padding-bottom: clamp(48px, 6vw, 76px); }
+        #procesas .sec-head { margin-bottom: clamp(28px, 4vw, 40px); }
+        .steps3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(28px, 4vw, 52px); }
+        .pstep { position: relative; border-top: 1px solid rgba(199, 163, 106, 0.45); padding-top: 22px; }
+        .pstep .n { font-family: var(--font-serif); font-size: 2.2rem; color: var(--color-gold); line-height: 1; display: block; margin-bottom: 12px; }
+        .pstep h3 { font-size: 1.25rem; margin-bottom: 8px; }
+        .pstep p { font-size: 0.93rem; margin: 0; line-height: 1.7; max-width: 320px; }
+
+        /* ===== PRICING ===== */
+        .price-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; align-items: stretch; }
+        @media (max-width: 1080px) { .price-grid { grid-template-columns: repeat(2, 1fr); max-width: 660px; margin: 0 auto; } }
+        @media (max-width: 560px) { .price-grid { grid-template-columns: 1fr; max-width: 400px; } }
+        .pcard {
+            position: relative; display: flex; flex-direction: column;
+            background: var(--color-surface); border: 1px solid var(--color-border);
+            padding: 42px 34px 36px;
+        }
+        .pcard--feat { border: 1px solid var(--color-gold); }
+        .pbadge {
+            position: absolute; top: 0; left: 0; right: 0;
+            background: var(--color-gold); color: var(--color-espresso);
+            font-family: var(--font-sans); font-size: 0.66rem; font-weight: 600;
+            letter-spacing: 2px; text-transform: uppercase; text-align: center; padding: 8px;
+        }
+        .pcard--feat { padding-top: 60px; }
+        .pcard h3 { font-size: 1.25rem; margin-bottom: 8px; }
+        .pcard .amt { font-family: var(--font-serif); font-size: 2.8rem; font-weight: 600; color: var(--color-heading); margin: 8px 0 16px; }
+        .pcard .pnote { font-family: var(--font-sans); font-size: 0.78rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--color-gold-dark); margin: -8px 0 16px; }
+        .pcard p { font-size: 0.92rem; color: var(--color-text); margin: 0 0 auto; line-height: 1.7; }
+        .price-cta { text-align: center; margin-top: 46px; }
+
+        /* ===== KAINŲ KORTELIŲ HOVER (premium, subtilus) ===== */
+        .pcard {
+            transition: transform .24s cubic-bezier(0.22, 1, 0.36, 1),
+                        border-color .24s ease, box-shadow .24s ease;
+        }
+        .pcard .amt { transition: transform .24s cubic-bezier(0.22, 1, 0.36, 1); }
+        .pcard:hover, .pcard:focus-within {
+            transform: translateY(-6px);
+            border-color: var(--color-gold);
+            box-shadow: 0 18px 40px rgba(47, 36, 33, 0.10);
+        }
+        .pcard:hover .amt, .pcard:focus-within .amt { transform: translateY(-2px); }
+        /* Rekomenduojama kortelė – subtilesnis šiltai auksinis akcentas */
+        .pcard--feat:hover, .pcard--feat:focus-within {
+            border-color: var(--color-gold-dark);
+            box-shadow: 0 20px 46px rgba(168, 130, 69, 0.18);
+        }
+        /* Kursorių sekantis auksinis švytintis rėmelis (spotlight) – tik kainų kortelėms */
+        .price-grid { --x: 0; --y: 0; }
+        .pcard::before, .pcard::after {
+            content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 2.5px;
+            background: radial-gradient(260px 260px at calc(var(--x, 0) * 1px) calc(var(--y, 0) * 1px),
+                        #FBE7BE, var(--color-gold) 26%, var(--color-gold-dark) 46%, transparent 70%);
+            background-attachment: fixed;
+            -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+            -webkit-mask-composite: xor; mask-composite: exclude;
+            pointer-events: none; opacity: 0; transition: opacity .3s ease;
+        }
+        /* Antras sluoksnis – išlietas (blur) švytėjimas, kad ryškiau spindėtų */
+        .pcard::after { padding: 3px; filter: blur(8px); }
+        .price-grid:hover .pcard::before { opacity: 1; }
+        .price-grid:hover .pcard::after { opacity: 0.9; }
+        @media (prefers-reduced-motion: reduce) { .pcard::before, .pcard::after { transition: none; } }
+        /* CTA mygtukas po kortelėmis */
+        .price-cta .btn-line {
+            transition: background-color .15s ease, color .15s ease,
+                        transform .24s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .price-cta .btn-line:hover, .price-cta .btn-line:focus-visible { transform: translateY(-2px); }
+
+        @media (prefers-reduced-motion: reduce) {
+            .pcard:hover, .pcard:focus-within,
+            .pcard:hover .amt, .pcard:focus-within .amt,
+            .price-cta .btn-line:hover, .price-cta .btn-line:focus-visible { transform: none; }
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        /* ===== ATSILIEPIMŲ STEKAS (sukrautos pakreiptos kortelės; užvedus išsiskleidžia + spalvos) ===== */
+        .tstack { position: relative; display: flex; flex-direction: column; align-items: center; gap: 22px; }
+        .tstack-card {
+            width: 340px; max-width: 88vw; box-sizing: border-box;
+            background: var(--color-surface); border: 1px solid var(--color-border);
+            border-radius: 18px; padding: 22px 24px; display: flex; flex-direction: column; gap: 14px;
+        }
+        .tsc-head { display: flex; align-items: center; gap: 12px; }
+        .tsc-avatar { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(199,160,101,0.4); flex-shrink: 0; }
+        .tsc-id { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+        .tsc-name { font-family: var(--font-sans); font-size: 0.92rem; font-weight: 700; letter-spacing: 0.3px; color: var(--color-heading); }
+        .tsc-loc { font-size: 0.72rem; letter-spacing: 0.8px; color: var(--color-muted); }
+        .tsc-stars { color: var(--color-gold); font-size: 0.82rem; letter-spacing: 1px; flex-shrink: 0; }
+        .tsc-quote { font-family: var(--font-sans); font-style: normal; font-weight: 400; font-size: 0.95rem; line-height: 1.7; color: var(--color-text); margin: 0; }
+        /* Desktop „fan" steko režimas (su JS – transformacijas nustato JS) */
+        @media (min-width: 760px) {
+            .tstack.is-stack { display: grid; place-items: center; min-height: 420px; gap: 0; }
+            .tstack.is-stack .tstack-card {
+                grid-area: 1 / 1; cursor: pointer; filter: grayscale(1); user-select: none;
+                box-shadow: 0 10px 30px rgba(47,36,33,0.07);
+                transition: transform .55s cubic-bezier(0.22, 1, 0.36, 1), filter .5s ease, box-shadow .5s ease;
+                will-change: transform;
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .tstack.is-stack .tstack-card { transition: none; }
+        }
+        /* Mažesni tarpai atsiliepimų sekcijoje (mažiau tuščios erdvės) */
+        #atsiliepimai { padding: clamp(46px, 5.5vw, 80px) 0; }
+        #atsiliepimai .sec-head { margin-bottom: clamp(20px, 2.6vw, 34px); }
+        .tnote { text-align: center; margin: 44px auto 0; max-width: 620px; font-size: 0.8rem; color: var(--color-muted); opacity: 0.8; }
+
+        /* ===== FAQ ===== */
+        .faq-list { max-width: 760px; margin: 0 auto; border-top: 1px solid var(--color-border); }
+        .faq-item { border-bottom: 1px solid var(--color-border); }
+        .faq-item summary {
+            list-style: none; cursor: pointer; padding: 20px 6px;
+            font-family: var(--font-sans); font-weight: 500; font-size: 1rem; color: var(--color-heading);
+            display: flex; justify-content: space-between; align-items: center; gap: 16px;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after { content: "+"; font-size: 1.4rem; color: var(--color-gold-dark); }
+        .faq-item[open] summary::after { content: "−"; }
+        .faq-a { padding: 0 6px 20px; font-size: 0.93rem; color: var(--color-text); max-width: 640px; }
+
+        /* ===== CLOSING – asimetrinė premium uždarymo sekcija (CTA kairėje + kontaktai dešinėje, NE antras hero) ===== */
+        .closing {
+            position: relative; overflow: hidden; isolation: isolate;
+            display: flex; align-items: center;
+            min-height: clamp(460px, 54vh, 600px);
+            padding: clamp(44px, 5vw, 64px) 0; color: #fff;
+            background: var(--color-brand-black);
+        }
+        /* Foninė LPG procedūros nuotrauka – atskiras sluoksnis (animuojamas kaip hero) */
+        .closing::before {
+            content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+            background-image: url('images/foto1.jpg');
+            background-size: cover; background-position: center center; background-repeat: no-repeat;
+            transform-origin: center center; transform: scale(1.04) translate3d(0, 0, 0); will-change: transform;
+        }
+        /* Perdanga – pritamsinta, bet ~25% šviesesnė: procedūra matosi kaip atmosfera.
+           Kairysis šono gradientas (CTA pusė tamsesnė) tekstui + lengvas bendras pritamsinimas. */
+        .closing::after {
+            content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+            background:
+                linear-gradient(100deg, rgba(18,13,11,0.78) 0%, rgba(18,13,11,0.50) 52%, rgba(18,13,11,0.60) 100%),
+                linear-gradient(to bottom, rgba(18,13,11,0.34) 0%, rgba(18,13,11,0.16) 12%, rgba(18,13,11,0.16) 88%, rgba(18,13,11,0.34) 100%);
+        }
+        .closing-inner {
+            position: relative; z-index: 1; width: 100%;
+            display: grid; grid-template-columns: 55% 1fr; gap: clamp(40px, 6vw, 92px);
+            align-items: center; text-align: left;
+        }
+        /* Kairė: uždarymo CTA (pagrindinis fokusas, bet mažesnis nei hero H1) */
+        .closing-cta .label { color: var(--color-gold); margin-bottom: 16px; }
+        .closing-cta h2 { color: #fff; font-size: clamp(1.9rem, 3.4vw, 2.7rem); line-height: 1.18; margin-bottom: 18px; max-width: 13ch; }
+        .closing-cta p { margin: 0 0 30px; color: rgba(255,255,255,0.84); line-height: 1.65; max-width: 460px; }
+        .closing-cta .row { display: flex; flex-wrap: wrap; gap: 14px; justify-content: flex-start; }
+        /* Dešinė: kompaktiškas premium kontaktų panelis (subtilios eilutės, ne footer-grid / ne kortelės) */
+        .closing-info { display: flex; flex-direction: column; width: 100%; max-width: 360px; }
+        .ci-item { display: flex; flex-direction: column; gap: 5px; padding: 11px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .ci-item:last-child { border-bottom: 0; }
+        .ci-label { font-family: var(--font-sans); font-size: 0.66rem; font-weight: 600; letter-spacing: 1.8px; text-transform: uppercase; color: var(--color-gold); }
+        .ci-value { font-size: 0.98rem; color: rgba(255,255,255,0.9); line-height: 1.5; }
+        a.ci-value { text-decoration: none; transition: color .2s ease; }
+        a.ci-value:hover { color: var(--color-gold); }
+        .ci-link { font-size: 0.84rem; color: rgba(255,255,255,0.66); text-decoration: none; letter-spacing: 0.3px; transition: color .2s ease; }
+        .ci-link:hover { color: var(--color-gold); }
+        .ci-hours { display: flex; flex-direction: column; gap: 2px; color: rgba(255,255,255,0.62); }
+        .ci-hours em { font-style: normal; color: rgba(255,255,255,0.9); margin-left: 6px; }
+        /* Maži apvalūs socialiniai */
+        .fsocial { display: inline-flex; gap: 9px; margin-top: 1px; }
+        .fsocial a { width: 34px; height: 34px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.28); color: rgba(255,255,255,0.82); display: inline-flex; align-items: center; justify-content: center; transition: .25s; }
+        .fsocial a:hover { background: var(--color-gold); border-color: var(--color-gold); color: var(--color-brand-black); }
+        .fsocial svg { width: 15px; height: 15px; fill: currentColor; }
+        @media (max-width: 860px) {
+            .closing { min-height: 0; }
+            .closing-inner { grid-template-columns: 1fr; gap: clamp(32px, 6vw, 44px); }
+            .closing-info { max-width: 420px; }
+        }
+
+        /* ===== CLOSING ANIMACIJA – SAUGI, lokali, tik šiai sekcijai =====
+           Numatyta būsena (be JS / be motion-on / be .in-view) = visiškai matoma (opacity 1).
+           Opacity:0 atsiranda TIK kai html.motion-on + .closing.in-view (JS patvirtino judesį ir
+           sekcija matoma) ir animacija iškart groja iki opacity 1. reduced-motion = jokio slėpimo. */
+        html.motion-on .closing.in-view { animation: none; } /* atšaukia bendrą smRise ant sekcijos */
+        .bw { display: inline-block; } /* žodžio vienetas „blur" atskleidimui (matomas pagal nutylėjimą) */
+        @media (prefers-reduced-motion: no-preference) {
+            @keyframes blurWordIn  { from { opacity: 0; filter: blur(10px) brightness(0.6); transform: translateY(18px) scale(0.96); } to { opacity: 1; filter: blur(0) brightness(1); transform: translateY(0) scale(1); } }
+            @keyframes closeRiseSoft { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+            /* Fonas: ta pati gyva, tęstinė hero judesio kalba (heroImageMotion) – įsijungia įslinkus */
+            html.motion-on .closing.in-view::before { animation: heroImageMotion 6.5s linear infinite alternate; }
+            /* Tekstas: žodis po žodžio „blur" atskleidimas (delsa nustatoma JS) */
+            html.motion-on .closing.in-view .bw { opacity: 0; animation: blurWordIn .7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
+            /* Mygtukai: švelnus fade po teksto */
+            html.motion-on .closing.in-view .row { opacity: 0; animation: closeRiseSoft .55s cubic-bezier(0.22, 1, 0.36, 1) .5s forwards; }
+            /* Kontaktų eilutės: „blur" atskleidimas per elementą, pakopinis stagger */
+            html.motion-on .closing.in-view .ci-item { opacity: 0; animation: blurWordIn .6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+            html.motion-on .closing.in-view .ci-item:nth-child(1) { animation-delay: .56s; }
+            html.motion-on .closing.in-view .ci-item:nth-child(2) { animation-delay: .66s; }
+            html.motion-on .closing.in-view .ci-item:nth-child(3) { animation-delay: .76s; }
+            html.motion-on .closing.in-view .ci-item:nth-child(4) { animation-delay: .86s; }
+        }
+        @media (prefers-reduced-motion: no-preference) and (max-width: 700px) {
+            @keyframes blurWordIn  { from { opacity: 0; filter: blur(8px) brightness(0.65); transform: translateY(12px) scale(0.97); } to { opacity: 1; filter: blur(0) brightness(1); transform: translateY(0) scale(1); } }
+            @keyframes closeRiseSoft { from { opacity: 0; transform: translateY(11px); } to { opacity: 1; transform: translateY(0); } }
+        }
+        /* Saugiklis: reduced-motion = jokios animacijos, viskas matoma iškart */
+        @media (prefers-reduced-motion: reduce) {
+            html.motion-on .closing.in-view::before,
+            html.motion-on .closing.in-view .bw,
+            html.motion-on .closing.in-view .row,
+            html.motion-on .closing.in-view .ci-item { animation: none !important; opacity: 1 !important; filter: none !important; transform: none !important; }
+        }
+
+        /* ===== COOKIE + MODAL (preserved) ===== */
+        .cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; z-index: 1100; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px 12px; padding: 5px 18px; background: rgba(18, 15, 13, 0.74); backdrop-filter: blur(4px); color: rgba(255,255,255,0.64); font-size: 0.68rem; letter-spacing: 0.2px; line-height: 1.35; }
+        .cookie-banner button { font-family: var(--font-sans); font-size: 0.58rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--color-gold); background: transparent; border: 1px solid rgba(199,163,106,0.4); padding: 4px 13px; cursor: pointer; transition: background-color .15s ease, color .15s ease, border-color .15s ease; }
+        .cookie-banner button:hover { background: var(--color-gold); border-color: var(--color-gold); color: var(--color-brand-black); }
+        .modal-overlay { position: fixed; inset: 0; z-index: 2000; display: none; align-items: flex-start; justify-content: center; padding: 40px 16px; overflow-y: auto; background: rgba(21,17,15,0.6); backdrop-filter: blur(3px); }
+        .modal-overlay.is-open { display: flex; }
+        .modal { position: relative; width: 100%; max-width: 520px; margin: auto; background: var(--color-bg); padding: 48px 44px; box-shadow: 0 30px 80px rgba(21,17,15,0.4); animation: modalIn .3s ease; }
+        @keyframes modalIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+        .modal-close { position: absolute; top: 16px; right: 18px; width: 36px; height: 36px; border: none; background: transparent; font-size: 1.8rem; color: var(--color-muted); cursor: pointer; }
+        .modal h2 { font-size: clamp(1.6rem, 5vw, 2.1rem); margin-bottom: 6px; }
+        .modal-sub { font-size: 0.92rem; color: var(--color-text); opacity: 0.8; margin-bottom: 24px; }
+        .form-field { margin-bottom: 18px; }
+        .form-row { display: flex; gap: 16px; }
+        .form-row .form-field { flex: 1; }
+        .form-field label { display: block; font-family: var(--font-sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--color-muted); margin-bottom: 8px; }
+        .form-field input, .form-field textarea { width: 100%; font-family: var(--font-sans); font-size: 0.95rem; color: var(--color-text); background: #fff; border: 1px solid var(--color-border); padding: 13px 15px; }
+        .form-field textarea { resize: vertical; min-height: 110px; }
+        .form-field input:focus, .form-field textarea:focus { outline: none; border-color: var(--color-gold-dark); }
+        .form-consent { font-size: 0.78rem; line-height: 1.6; color: var(--color-text); opacity: 0.75; margin: 20px 0; }
+        .btn-submit { display: block; width: 100%; font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #fff; background: var(--color-espresso); border: none; padding: 18px; cursor: pointer; }
+        .btn-submit:hover { background: var(--color-gold-dark); }
+        .form-success { display: none; text-align: center; padding: 20px 0; }
+        .form-success.is-visible { display: block; }
+        .form-success .check { font-size: 2.6rem; color: var(--color-gold-dark); margin-bottom: 12px; }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 980px) {
+            .split2, .diff-grid, .dark-split { grid-template-columns: 1fr; }
+            .steps3, .tgrid { grid-template-columns: 1fr; }
+            .tgrid { max-width: 460px; margin: 0 auto; }
+            .diff-item { grid-template-columns: 58px minmax(0, 1fr); column-gap: 22px; }
+            .diff-num { font-size: clamp(2.3rem, 8vw, 2.9rem); }
+            .dark-split .media { order: -1; }
+            .media img, .dark-split .media img { min-height: 320px; }
+            .spotlight-media { min-height: 0; padding: 16px 12px 28px; }
+            .sp-imgwrap { width: min(340px, 82vw); }
+            .editorial .media { aspect-ratio: 5 / 4; max-height: 460px; }
+        }
+        @media (max-width: 860px) {
+            /* Logotipas centre, hamburger dešinėje; nuorodos atsiskleidžia žemyn */
+            .site-header { height: auto; }
+            .header-inner { height: auto; min-height: var(--header-h); flex-wrap: wrap; }
+            .brand { order: 0; margin: 0 auto; font-size: 1.4rem; }
+            .nav-toggle { display: inline-flex; position: absolute; right: 16px; top: clamp(20px, 3.4vw, 29px); }
+            .main-nav { display: none; flex: 1 1 100%; flex-direction: column; align-items: center; gap: 0; }
+            .nav-left { order: 3; margin-top: 12px; }
+            .nav-right { order: 4; }
+            .site-header.is-open { background: rgba(18, 15, 13, 0.97); }
+            .site-header.is-open .main-nav { display: flex; }
+            .main-nav a { padding: 12px 0; width: 100%; text-align: center; }
+            .site-header.is-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+            .site-header.is-open .nav-toggle span:nth-child(2) { opacity: 0; }
+            .site-header.is-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+        }
+        /* Telefone – švelnesnis (lėtesnis) fono judesys */
+        @media (max-width: 768px) {
+            .hero::before { animation-duration: 7.5s; }
+        }
+        @media (max-width: 560px) {
+            :root { --header-h: 66px; }
+            /* BUG FIX: telefonuose (≤560px) „Klaipėdoje" netilpdavo ir laužydavosi per vidurį – sumažintas H1 šriftas, kad tilptų (planšetė/desktopas nepaliesti) */
+            .hero h1 { max-width: 100%; font-size: clamp(3.2rem, 13.5vw, 4.8rem); }
+            .hero-cta { width: 100%; }
+            .hero-cta .btn-cta, .hero-cta .btn-ghost { flex: 1; min-width: 0; }
+            .closing .row .btn-cta, .closing .row .btn-ghost { width: 100%; max-width: 320px; }
+            .modal { padding: 40px 22px; }
+            .form-row { flex-direction: column; gap: 0; }
+            .brand { font-size: 1.25rem; }
+        }
+
+        /* Gerbiame vartotojus, kurie nenori judesio (turi būti paskutinis) */
+        @media (prefers-reduced-motion: reduce) {
+            .hero::before { animation: none; transform: scale(1.08); }
+        }
+
+        /* ===== SCROLL MOTION (saugu, naudoja scroll įvykį + rAF, ne IO-stebėtoją) =====
+           Numatyta būsena – MATOMA (jokio statinio opacity:0).
+           Animacija prasideda nuo opacity .5 (NIEKADA 0) ir groja TIK kai JS prideda
+           .in-view (elementui įslinkus). Slėpimas/animacija aktyvūs tik su html.motion-on,
+           kurią JS prideda TIK jei leidžiamas judesys. Be JS / reduced-motion → viskas matoma. */
+        @keyframes smRise { from { opacity: .5; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes smFade { from { opacity: .5; } to { opacity: 1; } }
+        html.motion-on .in-view { animation: smRise 1s cubic-bezier(0.22, 1, 0.36, 1) both; }
+        /* Kainų kortelėms – tik opacity (kad hover transform nesikirstų) */
+        html.motion-on .pcard.in-view { animation: smFade 1s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+        /* Stagger susijusiems elementams */
+        html.motion-on :is(.ucase, .pstep, .tcard, .faq-item, .diff-item).in-view:nth-child(2) { animation-delay: .10s; }
+        html.motion-on :is(.ucase, .pstep, .tcard, .faq-item, .diff-item).in-view:nth-child(3) { animation-delay: .20s; }
+        html.motion-on :is(.ucase, .faq-item, .diff-item).in-view:nth-child(4) { animation-delay: .30s; }
+        html.motion-on :is(.ucase, .faq-item).in-view:nth-child(5) { animation-delay: .40s; }
+        html.motion-on :is(.ucase, .faq-item).in-view:nth-child(6) { animation-delay: .50s; }
+        html.motion-on .price-grid .pcard.in-view:nth-child(2) { animation-delay: .14s; }
+        html.motion-on .price-grid .pcard.in-view:nth-child(3) { animation-delay: .28s; }
+
+        /* ===== PROCESAS – pakopinis atskleidimas (TIK ši sekcija; naudoja esamą saugų .in-view trigerį, NE naują sistemą) =====
+           Numatyta būsena matoma; opacity:0 atsiranda TIK su html.motion-on + .in-view (JS patvirtino judesį),
+           ir animacija iškart groja iki opacity 1. Be JS / reduced-motion → viskas matoma. */
+        @keyframes procRise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+        html.motion-on #procesas .sec-head.in-view { animation: procRise .9s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: 0s; }
+        html.motion-on #procesas .pstep.in-view { animation: procRise .9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+        html.motion-on #procesas .pstep.in-view:nth-child(1) { animation-delay: .18s; }
+        html.motion-on #procesas .pstep.in-view:nth-child(2) { animation-delay: .36s; }
+        html.motion-on #procesas .pstep.in-view:nth-child(3) { animation-delay: .54s; }
+        @media (prefers-reduced-motion: reduce) {
+            html.motion-on #procesas .sec-head.in-view,
+            html.motion-on #procesas .pstep.in-view { animation: none !important; opacity: 1 !important; transform: none !important; }
+        }
+
+        /* Mobiliesiems – mažesnis poslinkis */
+        @media (max-width: 700px) {
+            @keyframes smRise { from { opacity: .5; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        }
+
+        /* Reduced motion – jokio judesio (turinys matomas) */
+        @media (prefers-reduced-motion: reduce) {
+            html.motion-on .in-view, html.motion-on .pcard.in-view { animation: none !important; }
+        }
+
+        /* ===== „MŪSŲ KABINETAS" (dark-split) – nuotrauka įslysta iš kairės, tekstas pakopiškai pakyla.
+           Tik ši sekcija. Numatyta būsena matoma; animacija groja tik su .in-view. ===== */
+        .dark-split { overflow: hidden; } /* apkerpa nuotraukos perslinkimą – jokio horizontalaus slinkimo */
+        @keyframes slideInLeft { from { opacity: .92; transform: translateX(-60px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes panelRise   { from { opacity: .5;  transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        /* Nuotrauka (pakeičia bendrą smRise konkretesniu slydimu) */
+        html.motion-on .dark-split .media.in-view { animation: slideInLeft 1.55s cubic-bezier(0.16, 1, 0.3, 1) .12s both; }
+        /* Tekstas: panelė pati nejuda – pakopiškai juda jos vaikai (eyebrow → antraštė → pastraipos → mygtukas) */
+        html.motion-on .dark-panel.in-view { animation: none; }
+        html.motion-on .dark-panel.in-view > *:not(.gold-fx) { animation: panelRise .9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+        html.motion-on .dark-panel.in-view > *:nth-child(2) { animation-delay: .09s; }
+        html.motion-on .dark-panel.in-view > *:nth-child(3) { animation-delay: .18s; }
+        html.motion-on .dark-panel.in-view > *:nth-child(4) { animation-delay: .27s; }
+        html.motion-on .dark-panel.in-view > *:nth-child(5) { animation-delay: .36s; }
+        /* Mobiliesiems – mažesnis nuotraukos poslinkis */
+        @media (max-width: 700px) {
+            @keyframes slideInLeft { from { opacity: .92; transform: translateX(-28px); } to { opacity: 1; transform: translateX(0); } }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html.motion-on .dark-split .media.in-view,
+            html.motion-on .dark-panel.in-view > * { animation: none !important; }
+        }
+
+        /* ===== „KODĖL RINKTIS" + „APIE PROCEDŪRĄ" – šoninis įslydimas (tik šios sekcijos).
+           Numatyta būsena matoma; animacija groja tik su .in-view (esamas saugus trigeris). ===== */
+        .difference, .editorial { overflow: hidden; } /* apkerpa šoninį perslinkimą – jokio h-scroll */
+        @keyframes slideRight { from { opacity: .96; transform: translateX(56px); } to { opacity: 1; transform: translateX(0); } }
+        /* Iš KAIRĖS – kairieji tekstų blokai (perrašo bendrą smRise) */
+        html.motion-on .split2-text.in-view,
+        html.motion-on .diff-intro.in-view { animation: slideInLeft .9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+        /* Iš DEŠINĖS – „Kodėl rinktis" punktai (su esamu stagger) ir „Apie" nuotrauka (lėčiau) */
+        html.motion-on .diff-item.in-view { animation: slideRight .9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+        html.motion-on .editorial .media.in-view { animation: slideRight 1.55s cubic-bezier(0.16, 1, 0.3, 1) .1s both; }
+
+        /* Mobiliesiems – mažesnis poslinkis (slideInLeft mobilus jau −28px iš ankstesnio bloko) */
+        @media (max-width: 700px) {
+            @keyframes slideRight { from { opacity: .96; transform: translateX(28px); } to { opacity: 1; transform: translateX(0); } }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html.motion-on .split2-text.in-view, html.motion-on .diff-intro.in-view,
+            html.motion-on .diff-item.in-view, html.motion-on .editorial .media.in-view { animation: none !important; }
+        }
+    </style>
+</head>
+<body id="top">
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+            <nav class="main-nav nav-left" id="mainNav" aria-label="Pagrindinė navigacija">
+                <a href="#apie">Apie</a>
+                <a href="#kam-tinka">Kam tinka</a>
+                <a href="#kainos">Kainos</a>
+            </nav>
+            <!-- TODO: replace text mark with final black/gold logo asset (e.g. <img src="images/logo.svg" alt="Kūno Linija">). -->
+            <a class="brand" href="#top">Kūno<span>·</span>Linija</a>
+            <nav class="main-nav nav-right" aria-label="Pagrindinė navigacija (tęsinys)">
+                <a href="#atsiliepimai">Atsiliepimai</a>
+                <a href="#kontaktai">Kontaktai</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Atidaryti meniu" aria-controls="mainNav" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============ HERO ============ -->
+        <section class="hero">
+            <div class="hero-inner">
+                <h1 aria-label="LPG masažas Klaipėdoje">
+                    <span class="hero-line"><span class="word">LPG</span> <span class="word">masažas</span></span>
+                    <span class="hero-line"><span class="word">Klaipėdoje</span></span>
+                </h1>
+                <p class="hero-body">Celiulitui, limfodrenažui, tinimui mažinti ir kūno linijoms formuoti.</p>
+                <div class="hero-cta">
+                    <button type="button" class="btn-cta js-open-booking">Registruotis vizitui</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EDITORIAL INTRO ============ -->
+        <section class="editorial" id="apie">
+            <div class="container split2">
+                <div class="split2-text">
+                    <span class="label">Apie procedūrą</span>
+                    <h2>LPG Cellu&nbsp;M6 Alliance Premium <em>kūno lengvumui ir kontūrams</em></h2>
+                    <p>„Kūno Linija“ kabinete Klaipėdoje procedūros atliekamos naujos kartos LPG Cellu&nbsp;M6 Alliance Premium aparatu. Tai neinvazinė kūno procedūra, padedanti gerinti odos stangrumą, skatinti limfos tekėjimą, mažinti patinimų pojūtį ir dailinti kūno kontūrus.</p>
+                    <button type="button" class="btn-line js-open-booking">Registruotis vizitui</button>
+                </div>
+                <div class="media">
+                    <video autoplay muted loop playsinline preload="metadata" poster="images/fonas.png" aria-label="LPG Alliance procedūra „Kūno Linija“ kabinete Klaipėdoje">
+                        <source src="video/lpg-procedura-klaipeda.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ DIFFERENCE ============ -->
+        <section class="difference">
+            <div class="diff-grid">
+                <div class="diff-intro">
+                    <span class="label">Kodėl rinktis</span>
+                    <h2>Kodėl klientės renkasi Kūno Liniją</h2>
+                    <p>„Kūno Linijoje“ LPG&nbsp;Alliance procedūra pritaikoma pagal Jūsų tikslą, kūno zonas ir jautrumą. Vizitas vyksta ramiai, aiškiai paaiškinant eigą ir rekomenduojant tinkamiausią procedūrų kursą.</p>
+                </div>
+                <div class="diff-list">
+                    <div class="diff-item">
+                        <span class="diff-num">01</span>
+                        <h3>Vienas aiškus fokusas</h3>
+                        <p>Specializuojamės LPG&nbsp;Alliance kūno procedūrose, todėl visas dėmesys skiriamas šiai sričiai.</p>
+                    </div>
+                    <div class="diff-item">
+                        <span class="diff-num">02</span>
+                        <h3>Individualus intensyvumas</h3>
+                        <p>Procedūra pritaikoma pagal zoną, jautrumą ir tikslą — stangrumui, kontūrams ar lengvumo pojūčiui.</p>
+                    </div>
+                    <div class="diff-item">
+                        <span class="diff-num">03</span>
+                        <h3>Privatus kabinetas Klaipėdoje</h3>
+                        <p>Rami aplinka be skubėjimo, kur galima atsipalaiduoti ir skirti laiko sau.</p>
+                    </div>
+                    <div class="diff-item">
+                        <span class="diff-num">04</span>
+                        <h3>Aiški kurso rekomendacija</h3>
+                        <p>Po pirmo vizito aptariame, ar pakanka vienkartinės procedūros, ar verta rinktis kursą.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ DARK SPLIT ============ -->
+        <section class="dark-split">
+            <div class="media spotlight-media">
+                <figure class="spotlight">
+                    <span class="sp-frame" aria-hidden="true"></span>
+                    <div class="sp-imgwrap">
+                        <img src="images/foto1.jpg" alt="Rami LPG procedūrų aplinka „Kūno Linija“ kabinete Klaipėdoje" loading="lazy">
+                        <span class="sp-grad" aria-hidden="true"></span>
+                        <span class="sp-corner sp-tl-v" aria-hidden="true"></span>
+                        <span class="sp-corner sp-tl-h" aria-hidden="true"></span>
+                        <span class="sp-corner sp-br-v" aria-hidden="true"></span>
+                        <span class="sp-corner sp-br-h" aria-hidden="true"></span>
+                    </div>
+                    <span class="sp-index" aria-hidden="true">01</span>
+                </figure>
+            </div>
+            <div class="dark-panel">
+                <span class="label label--light">Mūsų kabinetas</span>
+                <h2>Rami vieta <em>kūno priežiūrai</em></h2>
+                <p>Procedūra atliekama privačioje, ramioje aplinkoje Klaipėdoje. Čia svarbu ne tik rezultatas, bet ir pati patirtis — švelnus tempas, aiškus paaiškinimas ir dėmesys Jūsų savijautai.</p>
+                <p>Nuo pirmo pokalbio iki procedūros rekomendacijos viskas vyksta paprastai, aiškiai ir be spaudimo.</p>
+                <button type="button" class="btn-ghost js-open-booking">Registruotis vizitui</button>
+                <canvas class="gold-fx" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:-1"></canvas>
+            </div>
+        </section>
+
+        <!-- ============ USE CASES ============ -->
+        <section class="sec sec-alt" id="kam-tinka">
+            <div class="container">
+                <div class="sec-head">
+                    <h2>Kada klientės renkasi LPG masažą</h2>
+                </div>
+                <div class="cols3">
+                    <div class="ucase">
+                        <span class="n">01</span>
+                        <h3>Odos tonuso palaikymui</h3>
+                        <p>Kai norisi lygesnės odos išvaizdos ir stangresnio pojūčio.</p>
+                    </div>
+                    <div class="ucase">
+                        <span class="n">02</span>
+                        <h3>Lengvumo pojūčiui</h3>
+                        <p>Kai jaučiamas patinimas ar norisi paskatinti limfos tekėjimą.</p>
+                    </div>
+                    <div class="ucase">
+                        <span class="n">03</span>
+                        <h3>Celiulito matomumo priežiūrai</h3>
+                        <p>Kai norisi reguliarios kūno priežiūros ir lygesnio odos paviršiaus.</p>
+                    </div>
+                    <div class="ucase">
+                        <span class="n">04</span>
+                        <h3>Kūno kontūrų priežiūrai</h3>
+                        <p>Pilvo, šlaunų, sėdmenų ar kitų pasirinktų zonų priežiūrai.</p>
+                    </div>
+                    <div class="ucase">
+                        <span class="n">05</span>
+                        <h3>Po sėdimo darbo</h3>
+                        <p>Kai kūnas jaučiasi sustingęs ir norisi daugiau lengvumo po ilgos dienos.</p>
+                    </div>
+                    <div class="ucase">
+                        <span class="n">06</span>
+                        <h3>Palaikomiesiems vizitams</h3>
+                        <p>Kai norisi palaikyti kūno priežiūros rutiną reguliariais vizitais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ REZULTATAI ============ -->
+        <section class="sec" id="rezultatai">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="label">Realūs rezultatai</span>
+                    <h2>Klienčių rezultatai <em>po LPG procedūrų</em></h2>
+                </div>
+                <div class="results-carousel" id="resultsCarousel">
+                    <button type="button" class="rc-nav rc-prev" aria-label="Ankstesnės nuotraukos">&#8249;</button>
+                    <div class="rc-track" id="rcTrack" role="list">
+                        <button type="button" class="result-slide" data-full="images/rezultatai1.jpg" aria-label="Padidinti rezultato nuotrauką — šlaunų ir sėdmenų sritis">
+                            <img src="images/rezultatai1.jpg" alt="LPG procedūrų rezultatas — šlaunų ir sėdmenų sritis" loading="lazy">
+                        </button>
+                        <button type="button" class="result-slide" data-full="images/rezultatai2.jpg" aria-label="Padidinti rezultato nuotrauką — juosmens sritis">
+                            <img src="images/rezultatai2.jpg" alt="LPG procedūrų rezultatas — juosmens sritis" loading="lazy">
+                        </button>
+                        <button type="button" class="result-slide is-crop-left" data-full="images/rezultatai5.png" aria-label="Padidinti rezultato nuotrauką — pilvo ir šlaunų sritis">
+                            <img src="images/rezultatai5.png" alt="LPG procedūrų rezultatas — pilvo ir šlaunų sritis" loading="lazy">
+                        </button>
+                        <button type="button" class="result-slide" data-full="images/rezultatai7.png" aria-label="Padidinti rezultato nuotrauką — kūno kontūrai iš šono">
+                            <img src="images/rezultatai7.png" alt="LPG procedūrų rezultatas — kūno kontūrai (šoninis vaizdas)" loading="lazy">
+                        </button>
+                        <button type="button" class="result-slide" data-full="images/rezultatai6.png" aria-label="Padidinti rezultato nuotrauką — šlaunų sritis">
+                            <img src="images/rezultatai6.png" alt="LPG procedūrų rezultatas — šlaunų sritis" loading="lazy">
+                        </button>
+                    </div>
+                    <button type="button" class="rc-nav rc-next" aria-label="Kitos nuotraukos">&#8250;</button>
+                </div>
+                <p class="results-note">Rezultatai individualūs ir priklauso nuo kūno būklės, pasirinkto procedūrų kurso bei gyvenimo būdo.</p>
+            </div>
+        </section>
+
+        <!-- ============ PROCESS ============ -->
+        <section class="sec" id="procesas">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="label">Procesas</span>
+                    <h2>Kaip vyksta vizitas</h2>
+                </div>
+                <div class="steps3">
+                    <div class="pstep">
+                        <span class="n">01</span>
+                        <h3>Trumpa konsultacija</h3>
+                        <p>Aptariame Jūsų tikslą, pasirenkamas kūno zonas, jautrumą ir kontraindikacijas.</p>
+                    </div>
+                    <div class="pstep">
+                        <span class="n">02</span>
+                        <h3>LPG procedūra</h3>
+                        <p>Parenkamas individualus intensyvumas, procedūra atliekama su specialiu LPG kostiumu.</p>
+                    </div>
+                    <div class="pstep">
+                        <span class="n">03</span>
+                        <h3>Aiški rekomendacija</h3>
+                        <p>Po vizito aptariame, ar pakanka vienkartinės procedūros, ar verta rinktis 5–10 procedūrų kursą.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PRICING ============ -->
+        <section class="sec sec-alt" id="kainos">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="label">Kainoraštis</span>
+                    <h2>LPG procedūros kainos</h2>
+                </div>
+                <div class="price-grid">
+                    <article class="pcard">
+                        <h3>LPG Express</h3>
+                        <div class="amt">20 €</div>
+                        <div class="pnote">20 min · 1 zona</div>
+                        <p>Greita procedūra pasirinktai zonai (kojos, sėdmenys) — odos būklės gerinimas ir apimčių mažinimas.</p>
+                    </article>
+                    <article class="pcard">
+                        <h3>1 kartas</h3>
+                        <div class="amt">35 €</div>
+                        <p>Pilna 45 min. procedūra. Tinka pirmajam apsilankymui arba palaikomajam vizitui.</p>
+                    </article>
+                    <article class="pcard">
+                        <h3>5 kartų abonementas</h3>
+                        <div class="amt">160 €</div>
+                        <div class="pnote">32 € už kartą</div>
+                        <p>Trumpas kursas norint pajusti lengvumo efektą ir palaikyti odos tonusą.</p>
+                    </article>
+                    <article class="pcard pcard--feat">
+                        <div class="pbadge">Geriausia kurso kaina</div>
+                        <h3>10 kartų abonementas</h3>
+                        <div class="amt">300 €</div>
+                        <div class="pnote">30 € už kartą</div>
+                        <p>Geriausia kurso kaina reguliariam procedūrų kursui.</p>
+                    </article>
+                </div>
+                <div class="price-cta">
+                    <button type="button" class="btn-line js-open-booking">Registruotis vizitui</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TESTIMONIALS ============ -->
+        <section class="sec" id="atsiliepimai">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="label">Atsiliepimai</span>
+                    <h2>Ką klientės sako <em>po LPG procedūrų</em></h2>
+                </div>
+                <div class="tstack" id="tStack" role="list" aria-label="Klienčių atsiliepimai">
+                    <article class="tstack-card" role="listitem" data-i="0">
+                        <div class="tsc-head">
+                            <img class="tsc-avatar" src="images/testimonials/testimonial-face-ruta.jpg" alt="Rūta" loading="lazy">
+                            <div class="tsc-id"><span class="tsc-name">Rūta</span><span class="tsc-loc">Klaipėda</span></div>
+                            <span class="tsc-stars" aria-label="5 iš 5">★★★★★</span>
+                        </div>
+                        <p class="tsc-quote">Po kurso oda tapo stangresnė, pastebimai sumažėjo celiulito matomumas. Procedūros malonios, atmosfera jauki.</p>
+                    </article>
+                    <article class="tstack-card" role="listitem" data-i="1">
+                        <div class="tsc-head">
+                            <img class="tsc-avatar" src="images/testimonials/testimonial-face-lijana.jpg" alt="Lijana" loading="lazy">
+                            <div class="tsc-id"><span class="tsc-name">Lijana</span><span class="tsc-loc">Klaipėda</span></div>
+                            <span class="tsc-stars" aria-label="5 iš 5">★★★★★</span>
+                        </div>
+                        <p class="tsc-quote">Profesionalus požiūris ir nuoširdus dėmesys. Po kelių kartų kūnas atrodo dailesnis ir lengvesnis.</p>
+                    </article>
+                    <article class="tstack-card" role="listitem" data-i="2">
+                        <div class="tsc-head">
+                            <img class="tsc-avatar" src="images/testimonials/testimonial-face-monika.jpg" alt="Monika" loading="lazy">
+                            <div class="tsc-id"><span class="tsc-name">Monika</span><span class="tsc-loc">Klaipėda</span></div>
+                            <span class="tsc-stars" aria-label="5 iš 5">★★★★★</span>
+                        </div>
+                        <p class="tsc-quote">Puiki vieta atsipalaiduoti ir pasirūpinti savimi. Malonu sugrįžti — jaučiuosi geriau po kiekvieno vizito.</p>
+                    </article>
+                    <article class="tstack-card" role="listitem" data-i="3">
+                        <div class="tsc-head">
+                            <img class="tsc-avatar" src="images/testimonials/testimonial-face-indre.jpg" alt="Indrė" loading="lazy">
+                            <div class="tsc-id"><span class="tsc-name">Indrė</span><span class="tsc-loc">Klaipėda</span></div>
+                            <span class="tsc-stars" aria-label="5 iš 5">★★★★★</span>
+                        </div>
+                        <p class="tsc-quote">Jau po kelių vizitų oda tapo lygesnė, o kojos — lengvesnės. Ačiū už rūpestingą ir malonų požiūrį.</p>
+                    </article>
+                    <article class="tstack-card" role="listitem" data-i="4">
+                        <div class="tsc-head">
+                            <img class="tsc-avatar" src="images/testimonials/testimonial-face-vaida.jpg" alt="Vaida" loading="lazy">
+                            <div class="tsc-id"><span class="tsc-name">Vaida</span><span class="tsc-loc">Klaipėda</span></div>
+                            <span class="tsc-stars" aria-label="5 iš 5">★★★★★</span>
+                        </div>
+                        <p class="tsc-quote">Tapo mėgstama savaitės procedūra. Oda atrodo stangresnė, o aš jaučiuosi pailsėjusi ir atsipalaidavusi.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FAQ ============ -->
+        <section class="sec sec-alt" id="duk">
+            <div class="container">
+                <div class="sec-head">
+                    <span class="label">DUK</span>
+                    <h2>Dažniausi klausimai</h2>
+                </div>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>Kiek trunka viena LPG procedūra?</summary>
+                        <div class="faq-a">LPG Express procedūra trunka 20 minučių, o pilna kūno procedūra – 45 minutes.</div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Kiek procedūrų rekomenduojama?</summary>
+                        <div class="faq-a">Pagal tikslą dažniausiai rekomenduojamas 5–10 procedūrų kursas. Tikslią rekomendaciją pateikiame po pirmo vizito.</div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Ar LPG masažas skausmingas?</summary>
+                        <div class="faq-a">Procedūra neinvazinė ir dažniausiai patiriama kaip malonus, atpalaiduojantis masažas. Intensyvumas parenkamas individualiai.</div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Kada nerekomenduojama atlikti procedūros?</summary>
+                        <div class="faq-a">Procedūra nerekomenduojama nėštumo metu, esant onkologinėms ligoms, ūmioms infekcijoms, tromboflebitui ar odos pažeidimams zonoje. Jeigu abejojate dėl sveikatos būklės, pasitarkite su gydytoju ar specialistu.</div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Kiek kainuoja LPG masažas Klaipėdoje?</summary>
+                        <div class="faq-a">LPG Express procedūra kainuoja 20 €, vienkartinė pilna procedūra – 35 €. 5 procedūrų kursas kainuoja 160 € (32 € už procedūrą), o 10 procedūrų kursas – 300 € (30 € už procedūrą).</div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Ar reikalingas specialus kostiumas?</summary>
+                        <div class="faq-a">Taip, LPG procedūra atliekama vilkint specialų kostiumą. Jis reikalingas higienai, komfortui ir sklandžiam aparato slydimui procedūros metu.</div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CLOSING – viena vientisa premium uždarymo sekcija (CTA + kontaktai) ============ -->
+        <section class="closing" id="kontaktai">
+            <div class="container closing-inner">
+                <div class="closing-cta">
+                <span class="label">Pasiruošusi skirti laiko savo kūnui?</span>
+                <h2>Registruokitės LPG procedūrai <em>Klaipėdoje</em></h2>
+                <p>Aptarsime Jūsų tikslą, zonas ir rekomenduosime, ar pakanka vienkartinio vizito, ar verta rinktis kursą.</p>
+                <div class="row">
+                    <button type="button" class="btn-cta js-open-booking">Registruotis vizitui</button>
+                    <a href="tel:+37063656181" class="btn-ghost">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.53 15.53 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.24 1.02l-2.2 2.21z"/></svg>
+                        Skambinti
+                    </a>
+                </div>
+                </div>
+
+                <div class="closing-info">
+                    <div class="ci-item">
+                        <span class="ci-label">Susisiekti</span>
+                        <a class="ci-value" href="tel:+37063656181">+370 636 56181</a>
+                    </div>
+                    <div class="ci-item">
+                        <span class="ci-label">Adresas</span>
+                        <span class="ci-value">Šermukšnių g. 15, Klaipėda</span>
+                        <a class="ci-link" href="https://www.google.com/maps/search/?api=1&query=55.6982418,21.1390067" target="_blank" rel="noopener">Atidaryti Google Maps →</a>
+                    </div>
+                    <div class="ci-item">
+                        <span class="ci-label">Darbo laikas</span>
+                        <span class="ci-value ci-hours"><span>I–IV <em>09:00–19:00</em></span><span>V <em>09:00–17:00</em></span><span>VI–VII <em>Nedirbame</em></span></span>
+                    </div>
+                    <div class="ci-item">
+                        <span class="ci-label">Sekite mus</span>
+                        <span class="fsocial">
+                            <a href="https://www.facebook.com/KunolinijaKlaipeda/" target="_blank" rel="noopener" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987H7.898V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                            </a>
+                            <a href="https://www.instagram.com/kunolinija/" target="_blank" rel="noopener" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.053 1.805.249 2.227.415.56.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227a3.81 3.81 0 01-.899 1.382 3.744 3.744 0 01-1.38.896c-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421a3.716 3.716 0 01-1.379-.899 3.644 3.644 0 01-.9-1.38c-.165-.42-.36-1.065-.412-2.235-.045-1.26-.06-1.649-.06-4.844 0-3.196.015-3.586.06-4.861.052-1.17.247-1.814.412-2.234.216-.561.477-.96.9-1.381.419-.419.824-.679 1.379-.896.42-.164 1.051-.36 2.221-.413 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 2.063c-3.259 0-3.667.014-4.947.072-.957.044-1.477.204-1.823.34-.458.178-.785.39-1.129.735-.345.345-.557.671-.735 1.129-.136.346-.296.866-.34 1.823-.058 1.281-.072 1.689-.072 4.948 0 3.259.014 3.667.072 4.948.044.957.204 1.477.34 1.823.178.458.39.785.735 1.129.344.345.671.557 1.129.735.346.136.866.296 1.823.34 1.28.058 1.688.072 4.947.072 3.259 0 3.667-.014 4.948-.072.957-.044 1.477-.204 1.823-.34.458-.178.785-.39 1.129-.735.345-.344.557-.671.735-1.129.136-.346.296-.866.34-1.823.058-1.281.072-1.689.072-4.948 0-3.259-.014-3.667-.072-4.947-.044-.957-.204-1.477-.34-1.823a3.046 3.046 0 00-.735-1.129 3.046 3.046 0 00-1.129-.735c-.346-.136-.866-.296-1.823-.34-1.281-.058-1.689-.072-4.948-.072zm0 3.51a6.264 6.264 0 100 12.528 6.264 6.264 0 000-12.528zm0 10.33a4.066 4.066 0 110-8.132 4.066 4.066 0 010 8.132zm7.978-10.578a1.464 1.464 0 11-2.928 0 1.464 1.464 0 012.928 0z"/></svg>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ MODAL (preserved) ============ -->
+    <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+        <div class="modal">
+            <button type="button" class="modal-close js-close-booking" aria-label="Uždaryti">&times;</button>
+            <form id="bookingForm" novalidate>
+                <h2 id="bookingTitle">Registracija vizitui</h2>
+                <p class="modal-sub">Užpildykite formą — susisieksime su jumis per 24 val. darbo dienomis.</p>
+                <div class="form-row">
+                    <div class="form-field"><label for="f-name">Vardas</label><input type="text" id="f-name" name="name" placeholder="Jūsų vardas" required></div>
+                    <div class="form-field"><label for="f-phone">Telefonas</label><input type="tel" id="f-phone" name="phone" placeholder="+370 600 00000" required></div>
+                </div>
+                <div class="form-field"><label for="f-email">El. paštas</label><input type="email" id="f-email" name="email" placeholder="jusu@elpastas.lt"></div>
+                <div class="form-field"><label for="f-message">Žinutė</label><textarea id="f-message" name="message" placeholder="Aprašykite pageidaujamą vizito laiką ar jums rūpimus klausimus..."></textarea></div>
+                <p class="form-consent">Pateikdami šią užklausą sutinkate, kad jūsų pateikti duomenys būtų naudojami susisiekimui. Duomenys tvarkomi laikantis BDAR reikalavimų.</p>
+                <button type="submit" class="btn-submit">Siųsti užklausą →</button>
+            </form>
+            <div class="form-success" id="bookingSuccess">
+                <div class="check">✓</div>
+                <h2>Ačiū!</h2>
+                <p>Jūsų užklausa paruošta. Susisieksime su jumis artimiausiu metu.<br>Skubiu atveju skambinkite <a href="tel:+37063656181" style="color: var(--color-gold-dark);">+370 636 56181</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ REZULTATŲ LIGHTBOX ============ -->
+    <div class="lightbox" id="resultLightbox" role="dialog" aria-modal="true" aria-label="Rezultato nuotrauka" hidden>
+        <button type="button" class="lightbox-close" aria-label="Uždaryti peržiūrą">&times;</button>
+        <img class="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- ============ COOKIE BANNER ============ -->
+    <div class="cookie-banner" id="cookieBanner">
+        <span>Naudojame slapukus, kad svetainė veiktų sklandžiai.</span>
+        <button onclick="document.getElementById('cookieBanner').style.display='none';">Gerai</button>
+    </div>
+
+    <!-- ============ SCRIPTS ============ -->
+    <script>
+        // Sklandus slinkimas + mobilaus meniu uždarymas
+        var header = document.getElementById('siteHeader');
+        var toggle = document.getElementById('navToggle');
+        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                var id = this.getAttribute('href').slice(1);
+                var target = id ? document.getElementById(id) : null;
+                if (id === 'top') { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+                else if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+                if (header.classList.contains('is-open')) { header.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); }
+            });
+        });
+        // Burger
+        toggle.addEventListener('click', function () {
+            var open = header.classList.toggle('is-open');
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+
+        // Header scroll būsena: skaidrus viršuje → beveik juodas paslinkus
+        var onScroll = function () {
+            if (window.scrollY > 60) header.classList.add('is-scrolled');
+            else header.classList.remove('is-scrolled');
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    </script>
+
+
+    <script>
+        // Registracijos modalas (Formspree)
+        (function () {
+            // TODO: įrašykite savo Formspree adresą (https://formspree.io) vietoj 'JUSU_FORMSPREE_ID'.
+            var FORMSPREE_ENDPOINT = 'https://formspree.io/f/JUSU_FORMSPREE_ID';
+            var modal = document.getElementById('bookingModal');
+            var form = document.getElementById('bookingForm');
+            var success = document.getElementById('bookingSuccess');
+            function openModal() { modal.classList.add('is-open'); document.body.style.overflow = 'hidden'; }
+            function closeModal() { modal.classList.remove('is-open'); document.body.style.overflow = ''; form.style.display = ''; success.classList.remove('is-visible'); form.reset(); }
+            document.querySelectorAll('.js-open-booking').forEach(function (b) { b.addEventListener('click', openModal); });
+            document.querySelectorAll('.js-close-booking').forEach(function (b) { b.addEventListener('click', closeModal); });
+            modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+            document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal(); });
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                if (!form.checkValidity()) { form.reportValidity(); return; }
+                var sb = form.querySelector('.btn-submit'); var t = sb.textContent;
+                sb.disabled = true; sb.textContent = 'Siunčiama...';
+                fetch(FORMSPREE_ENDPOINT, { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(form) })
+                .then(function (r) { if (r.ok) { form.style.display = 'none'; success.classList.add('is-visible'); } else { alert('Nepavyko išsiųsti. Prašome paskambinti +370 636 56181.'); } })
+                .catch(function () { alert('Nepavyko išsiųsti. Patikrinkite ryšį arba skambinkite +370 636 56181.'); })
+                .finally(function () { sb.disabled = false; sb.textContent = t; });
+            });
+        })();
+    </script>
+
+    <script>
+        // Scroll motion (scroll įvykis + rAF, ne IO-stebėtojas). Turinys matomas pagal nutylėjimą:
+        // jei JS išjungtas, neveikia rAF ar reduced-motion – nieko nedarom, viskas matoma.
+        (function () {
+            var root = document.documentElement;
+            if (!('requestAnimationFrame' in window)) return;
+            if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            var sel = '.sec-head, .split2-text, .diff-intro, .diff-item, .dark-panel, .dark-split .media, .editorial .media,' +
+                      '.ucase, .pstep, .pcard, .tcard, .faq-item, .ccard, .closing';
+            var pending = Array.prototype.slice.call(document.querySelectorAll(sel));
+            if (!pending.length) return;
+            root.classList.add('motion-on');
+            var ticking = false;
+            function check() {
+                ticking = false;
+                var vh = window.innerHeight || root.clientHeight, trigger = vh * 0.92;
+                for (var i = pending.length - 1; i >= 0; i--) {
+                    if (pending[i].getBoundingClientRect().top < trigger) {
+                        pending[i].classList.add('in-view');
+                        pending.splice(i, 1);
+                    }
+                }
+                if (!pending.length) {
+                    window.removeEventListener('scroll', onScroll);
+                    window.removeEventListener('resize', onScroll);
+                }
+            }
+            function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(check); } }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            window.addEventListener('resize', onScroll, { passive: true });
+            check(); // atskleidžiam tai, kas jau matoma įkrovus
+        })();
+
+        // Apatinės (closing) sekcijos CTA tekstas → žodis po žodžio „blur" atskleidimas.
+        // Skaido tik tekstą; <em>, nuorodos ir <br> išsaugomi kaip vientisi vienetai. Matoma pagal nutylėjimą.
+        (function () {
+            var STEP = 0.03;
+            function splitEl(el, base) {
+                if (!el) return;
+                var nodes = Array.prototype.slice.call(el.childNodes), wi = 0;
+                el.innerHTML = '';
+                nodes.forEach(function (node) {
+                    if (node.nodeType === 3) {
+                        node.nodeValue.split(/(\s+)/).forEach(function (p) {
+                            if (p === '') return;
+                            if (/^\s+$/.test(p)) { el.appendChild(document.createTextNode(p)); return; }
+                            var s = document.createElement('span'); s.className = 'bw'; s.textContent = p;
+                            s.style.animationDelay = (base + wi * STEP).toFixed(3) + 's';
+                            el.appendChild(s); wi++;
+                        });
+                    } else if (node.nodeName === 'BR') {
+                        el.appendChild(node);
+                    } else {
+                        var w = document.createElement('span'); w.className = 'bw';
+                        w.style.animationDelay = (base + wi * STEP).toFixed(3) + 's';
+                        w.appendChild(node); el.appendChild(w); wi++;
+                    }
+                });
+            }
+            splitEl(document.querySelector('.closing-cta .label'), 0.05);
+            splitEl(document.querySelector('.closing-cta h2'), 0.18);
+            splitEl(document.querySelector('.closing-cta p'), 0.34);
+        })();
+
+        // Rezultatų galerijos lightbox – paspaudus kortelę atidaro nuotrauką didesnėje peržiūroje.
+        // Uždaroma: X, paspaudus už nuotraukos ribų, Escape. Prieinamumas: fokusas grįžta į mygtuką.
+        (function () {
+            var lb = document.getElementById('resultLightbox');
+            if (!lb) return;
+            var img = lb.querySelector('.lightbox-img');
+            var closeBtn = lb.querySelector('.lightbox-close');
+            var cards = document.querySelectorAll('.result-slide');
+            var lastFocused = null;
+            function open(card) {
+                var full = card.getAttribute('data-full');
+                var inner = card.querySelector('img');
+                if (!full) return;
+                lastFocused = card;
+                img.setAttribute('src', full);
+                img.setAttribute('alt', inner ? inner.getAttribute('alt') : '');
+                lb.hidden = false;
+                document.body.style.overflow = 'hidden';
+                closeBtn.focus();
+            }
+            function close() {
+                lb.hidden = true;
+                img.setAttribute('src', '');
+                document.body.style.overflow = '';
+                if (lastFocused) { lastFocused.focus(); lastFocused = null; }
+            }
+            cards.forEach(function (c) { c.addEventListener('click', function () { open(c); }); });
+            closeBtn.addEventListener('click', close);
+            lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+            document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !lb.hidden) close(); });
+        })();
+
+        // Rezultatų karuselė – rodyklės ← → slenka juostą; išjungiamos kraštuose. Lietimui – natūralus swipe.
+        (function () {
+            var car = document.getElementById('resultsCarousel');
+            if (!car) return;
+            var track = document.getElementById('rcTrack');
+            var prev = car.querySelector('.rc-prev');
+            var next = car.querySelector('.rc-next');
+            if (!track || !prev || !next) return;
+            /* Slenkam per vieną skaidrę (skaidrės plotis + tarpas); snap sulygiuoja tvarkingai */
+            function amount() {
+                var slide = track.querySelector('.result-slide');
+                return slide ? slide.getBoundingClientRect().width + 20 : track.clientWidth / 3;
+            }
+            function update() {
+                var max = track.scrollWidth - track.clientWidth - 2;
+                var atEnd = track.scrollLeft >= max;
+                prev.disabled = track.scrollLeft <= 2;
+                next.disabled = atEnd;
+            }
+            prev.addEventListener('click', function () { track.scrollBy({ left: -amount(), behavior: 'smooth' }); });
+            next.addEventListener('click', function () { track.scrollBy({ left: amount(), behavior: 'smooth' }); });
+            var ticking = false;
+            track.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(function () { ticking = false; update(); }); } }, { passive: true });
+            window.addEventListener('resize', update, { passive: true });
+            window.addEventListener('load', update);
+            update();
+        })();
+
+        // Atsiliepimų stekas – desktopui: sukrautos pakreiptos kortelės; užvedus ant kortelės ji pakyla, nuspalvinama
+        // ir priekinės kortelės pasitraukia, kad ją atidengtų. Mobile / be JS – paprastas vertikalus sąrašas.
+        (function () {
+            var stack = document.getElementById('tStack');
+            if (!stack) return;
+            var cards = Array.prototype.slice.call(stack.querySelectorAll('.tstack-card'));
+            if (cards.length < 2) return;
+            var mq = window.matchMedia('(min-width: 760px)');
+            var fine = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+            // Bazinė steko padėtis (x, y) px; SKEW -8deg visoms
+            var base = [ { x: -208, y: -16 }, { x: -104, y: 4 }, { x: 0, y: 24 }, { x: 104, y: 44 }, { x: 208, y: 64 } ];
+            function tf(x, y) { return 'translate(' + x + 'px,' + y + 'px) skewY(-8deg)'; }
+            function layout(focus) {
+                cards.forEach(function (card, i) {
+                    var b = base[i] || { x: 0, y: 0 }, x = b.x, y = b.y;
+                    if (focus !== null) {
+                        if (i === focus) { y -= 34; }              // užvesta – pakyla
+                        else if (i > focus) { x += 80; y += 84; }  // priekinės – pasitraukia
+                    }
+                    card.style.transform = tf(x, y);
+                    card.style.filter = (focus === i) ? 'none' : 'grayscale(1)';
+                    card.style.zIndex = (focus === i) ? 30 : (i + 1);
+                    card.style.boxShadow = (focus === i)
+                        ? '0 26px 54px rgba(47,36,33,0.18)' : '0 10px 30px rgba(47,36,33,0.07)';
+                });
+            }
+            function enable() {
+                stack.classList.add('is-stack');
+                layout(null);
+                if (fine) {
+                    cards.forEach(function (card, i) {
+                        card.addEventListener('mouseenter', function () { layout(i); });
+                    });
+                    stack.addEventListener('mouseleave', function () { layout(null); });
+                }
+            }
+            function disable() {
+                stack.classList.remove('is-stack');
+                cards.forEach(function (card) { card.style.transform = ''; card.style.filter = ''; card.style.zIndex = ''; card.style.boxShadow = ''; });
+            }
+            function apply() { if (mq.matches) enable(); else disable(); }
+            apply();
+            if (mq.addEventListener) mq.addEventListener('change', apply);
+            else if (mq.addListener) mq.addListener(apply);
+        })();
+
+        // Kainų kortelių kursorių sekantis auksinis švytėjimas – atnaujina --x/--y (viewport koordinatės).
+        (function () {
+            var grid = document.querySelector('.price-grid');
+            if (!grid) return;
+            var px = 0, py = 0, queued = false;
+            function apply() { queued = false; grid.style.setProperty('--x', px); grid.style.setProperty('--y', py); }
+            window.addEventListener('pointermove', function (e) {
+                px = e.clientX; py = e.clientY;
+                if (!queued) { queued = true; requestAnimationFrame(apply); }
+            }, { passive: true });
+        })();
+
+        // Hero teksto raidžių „bounce" hover efektas – tekstas suskaidomas į raides (.hchar) su pakopine delsa.
+        // Tarpai lieka įprastu tekstu (žodžiai nelūžta vidury); prieinamumas išlaikytas per aria-label.
+        (function () {
+            function splitChars(el, startIndex) {
+                if (!el) return startIndex;
+                var text = el.textContent, idx = startIndex, i, ch, s;
+                el.textContent = '';
+                for (i = 0; i < text.length; i++) {
+                    ch = text.charAt(i);
+                    if (ch === ' ') { el.appendChild(document.createTextNode(' ')); idx++; continue; }
+                    s = document.createElement('span');
+                    s.className = 'hchar';
+                    s.setAttribute('aria-hidden', 'true');
+                    s.textContent = ch;
+                    s.style.transitionDelay = (idx * 0.03).toFixed(3) + 's';
+                    el.appendChild(s);
+                    idx++;
+                }
+                return idx;
+            }
+            var h1 = document.querySelector('.hero h1');
+            if (h1) {
+                var words = h1.querySelectorAll('.word'), gi = 0, w;
+                for (w = 0; w < words.length; w++) gi = splitChars(words[w], gi);
+            }
+            var body = document.querySelector('.hero-body');
+            if (body) { body.setAttribute('aria-label', body.textContent.trim()); splitChars(body, 0); }
+        })();
+
+        // Subtilios auksinės dalelės tamsiose sekcijose (gryna canvas, be Three.js).
+        // Vienas bendras rAF ciklas; gerbia reduced-motion (statiškas kadras); pauzė, kai skirtukas paslėptas.
+        (function () {
+            var canvases = document.querySelectorAll('canvas.gold-fx');
+            if (!canvases.length || !('requestAnimationFrame' in window)) return;
+            var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var dpr = Math.min(window.devicePixelRatio || 1, 2);
+            var systems = [];
+            function rand(a, b) { return a + Math.random() * (b - a); }
+            function newPart(sys, anywhere) {
+                return { x: rand(0, sys.w), y: anywhere ? rand(0, sys.h) : sys.h + 10,
+                    r: rand(0.6, 2.0), a: rand(0.05, 0.20), vx: rand(-0.05, 0.05), vy: rand(-0.16, -0.03),
+                    tw: rand(0, Math.PI * 2), tws: rand(0.5, 1.5) };
+            }
+            function makeSystem(cv) {
+                var ctx = cv.getContext && cv.getContext('2d'); if (!ctx) return null;
+                var sys = { cv: cv, ctx: ctx, w: 0, h: 0, parts: [] };
+                sys.resize = function () {
+                    var rc = cv.getBoundingClientRect();
+                    sys.w = rc.width; sys.h = rc.height;
+                    cv.width = Math.max(1, Math.round(rc.width * dpr));
+                    cv.height = Math.max(1, Math.round(rc.height * dpr));
+                    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                    var n = Math.round(Math.min(44, Math.max(12, (rc.width * rc.height) / 15000)));
+                    sys.parts = []; for (var i = 0; i < n; i++) sys.parts.push(newPart(sys, true));
+                };
+                sys.resize(); return sys;
+            }
+            function draw(sys, t) {
+                var ctx = sys.ctx, p, i, alpha, tw, g;
+                ctx.clearRect(0, 0, sys.w, sys.h);
+                for (i = 0; i < sys.parts.length; i++) {
+                    p = sys.parts[i];
+                    if (!reduce) {
+                        p.x += p.vx; p.y += p.vy;
+                        if (p.y < -10) { p.y = sys.h + 10; p.x = rand(0, sys.w); }
+                        if (p.x < -10) p.x = sys.w + 10; else if (p.x > sys.w + 10) p.x = -10;
+                    }
+                    tw = reduce ? 1 : (0.6 + 0.4 * Math.sin(t * 0.001 * p.tws + p.tw));
+                    alpha = p.a * tw;
+                    g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r * 4);
+                    g.addColorStop(0, 'rgba(206,170,112,' + alpha.toFixed(3) + ')');
+                    g.addColorStop(1, 'rgba(206,170,112,0)');
+                    ctx.fillStyle = g;
+                    ctx.beginPath(); ctx.arc(p.x, p.y, p.r * 4, 0, Math.PI * 2); ctx.fill();
+                }
+            }
+            for (var i = 0; i < canvases.length; i++) { var s = makeSystem(canvases[i]); if (s) systems.push(s); }
+            if (!systems.length) return;
+            var running = true;
+            function frame(t) { for (var j = 0; j < systems.length; j++) draw(systems[j], t); if (running && !reduce) requestAnimationFrame(frame); }
+            requestAnimationFrame(frame);
+            var rt;
+            window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { for (var k = 0; k < systems.length; k++) systems[k].resize(); }, 150); }, { passive: true });
+            document.addEventListener('visibilitychange', function () {
+                if (document.hidden) { running = false; }
+                else if (!reduce) { running = true; requestAnimationFrame(frame); }
+            });
+        })();
+
+    </script>
+
+</body>
+</html>
