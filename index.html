@@ -664,6 +664,10 @@
         .form-field input:focus, .form-field textarea:focus { outline: none; border-color: var(--color-gold-dark); }
         .form-consent { font-size: 0.78rem; line-height: 1.6; color: var(--color-text); opacity: 0.75; margin: 20px 0; }
         .btn-submit { display: block; width: 100%; font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #fff; background: var(--color-espresso); border: none; padding: 18px; cursor: pointer; }
+        .btn-submit[disabled] { opacity: 0.6; cursor: default; }
+        /* Siuntimo klaidos pranešimas (būsena) – minimalus, dera su forma */
+        .form-error { margin: 16px 0 0; font-size: 0.85rem; line-height: 1.5; text-align: center; color: #b3261e; }
+        .form-error a { color: inherit; text-decoration: underline; font-weight: 600; }
         .btn-submit:hover { background: var(--color-gold-dark); }
         .form-success { display: none; text-align: center; padding: 20px 0; }
         .form-success.is-visible { display: block; }
@@ -1224,19 +1228,22 @@
             <form id="bookingForm" novalidate>
                 <h2 id="bookingTitle">Registracija vizitui</h2>
                 <p class="modal-sub">Užpildykite formą — susisieksime su jumis per 24 val. darbo dienomis.</p>
+                <input type="hidden" name="_subject" value="Nauja registracijos užklausa – Kūno Linija">
+                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none">
                 <div class="form-row">
-                    <div class="form-field"><label for="f-name">Vardas</label><input type="text" id="f-name" name="name" placeholder="Jūsų vardas" required></div>
-                    <div class="form-field"><label for="f-phone">Telefonas</label><input type="tel" id="f-phone" name="phone" placeholder="+370 600 00000" required></div>
+                    <div class="form-field"><label for="f-name">Vardas</label><input type="text" id="f-name" name="vardas" autocomplete="name" placeholder="Jūsų vardas" required></div>
+                    <div class="form-field"><label for="f-phone">Telefonas</label><input type="tel" id="f-phone" name="telefonas" autocomplete="tel" placeholder="+370 600 00000" required></div>
                 </div>
-                <div class="form-field"><label for="f-email">El. paštas</label><input type="email" id="f-email" name="email" placeholder="jusu@elpastas.lt"></div>
-                <div class="form-field"><label for="f-message">Žinutė</label><textarea id="f-message" name="message" placeholder="Aprašykite pageidaujamą vizito laiką ar jums rūpimus klausimus..."></textarea></div>
+                <div class="form-field"><label for="f-email">El. paštas</label><input type="email" id="f-email" name="email" autocomplete="email" placeholder="jusu@elpastas.lt"></div>
+                <div class="form-field"><label for="f-message">Žinutė</label><textarea id="f-message" name="zinute" placeholder="Aprašykite pageidaujamą vizito laiką ar jums rūpimus klausimus..."></textarea></div>
                 <p class="form-consent">Pateikdami šią užklausą sutinkate, kad jūsų pateikti duomenys būtų naudojami susisiekimui. Duomenys tvarkomi laikantis BDAR reikalavimų.</p>
                 <button type="submit" class="btn-submit">Siųsti užklausą →</button>
+                <p class="form-error" id="bookingError" hidden role="alert">Užklausos išsiųsti nepavyko. Bandykite dar kartą arba skambinkite <a href="tel:+37063656181">+370 636 56181</a>.</p>
             </form>
             <div class="form-success" id="bookingSuccess">
                 <div class="check">✓</div>
                 <h2>Ačiū!</h2>
-                <p>Jūsų užklausa paruošta. Susisieksime su jumis artimiausiu metu.<br>Skubiu atveju skambinkite <a href="tel:+37063656181" style="color: var(--color-gold-dark);">+370 636 56181</a>.</p>
+                <p>Jūsų užklausa išsiųsta. Susisieksime per 24 val. darbo dienomis.</p>
             </div>
         </div>
     </div>
@@ -1302,26 +1309,32 @@
     <script>
         // Registracijos modalas (Formspree)
         (function () {
-            // TODO: įrašykite savo Formspree adresą (https://formspree.io) vietoj 'JUSU_FORMSPREE_ID'.
-            var FORMSPREE_ENDPOINT = 'https://formspree.io/f/JUSU_FORMSPREE_ID';
+            var FORMSPREE_ENDPOINT = 'https://formspree.io/f/mlgqabyo';
             var modal = document.getElementById('bookingModal');
             var form = document.getElementById('bookingForm');
             var success = document.getElementById('bookingSuccess');
+            var errorBox = document.getElementById('bookingError');
+            var submitting = false;
             function openModal() { modal.classList.add('is-open'); document.body.style.overflow = 'hidden'; }
-            function closeModal() { modal.classList.remove('is-open'); document.body.style.overflow = ''; form.style.display = ''; success.classList.remove('is-visible'); form.reset(); }
+            function closeModal() { modal.classList.remove('is-open'); document.body.style.overflow = ''; form.style.display = ''; success.classList.remove('is-visible'); if (errorBox) errorBox.hidden = true; form.reset(); }
             document.querySelectorAll('.js-open-booking').forEach(function (b) { b.addEventListener('click', openModal); });
             document.querySelectorAll('.js-close-booking').forEach(function (b) { b.addEventListener('click', closeModal); });
             modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
             document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal(); });
             form.addEventListener('submit', function (e) {
                 e.preventDefault();
+                if (submitting) return;                                  /* neleidžiam siųsti antrą kartą */
                 if (!form.checkValidity()) { form.reportValidity(); return; }
+                if (errorBox) errorBox.hidden = true;
                 var sb = form.querySelector('.btn-submit'); var t = sb.textContent;
-                sb.disabled = true; sb.textContent = 'Siunčiama...';
+                submitting = true; sb.disabled = true; sb.textContent = 'Siunčiama...';
                 fetch(FORMSPREE_ENDPOINT, { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(form) })
-                .then(function (r) { if (r.ok) { form.style.display = 'none'; success.classList.add('is-visible'); } else { alert('Nepavyko išsiųsti. Prašome paskambinti +370 636 56181.'); } })
-                .catch(function () { alert('Nepavyko išsiųsti. Patikrinkite ryšį arba skambinkite +370 636 56181.'); })
-                .finally(function () { sb.disabled = false; sb.textContent = t; });
+                .then(function (r) {
+                    if (r.ok) { form.style.display = 'none'; success.classList.add('is-visible'); form.reset(); } /* sėkmė: rodom padėką, išvalom laukus */
+                    else if (errorBox) { errorBox.hidden = false; }        /* klaida: inline pranešimas, be alert, be perkrovimo */
+                })
+                .catch(function () { if (errorBox) errorBox.hidden = false; })
+                .finally(function () { submitting = false; sb.disabled = false; sb.textContent = t; });
             });
         })();
     </script>
