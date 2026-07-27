@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="7" fill="#17130F"/>
+  <rect x="1.5" y="1.5" width="29" height="29" rx="5.5" fill="none" stroke="#C9A46A" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="16" y="21.7" text-anchor="middle" font-family="Georgia, 'Playfair Display', 'Times New Roman', serif" font-size="17" font-weight="600" fill="#C9A46A">KL</text>
+</svg>
