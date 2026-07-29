@@ -6,6 +6,24 @@
     <meta name="description" content="LPG masažas Klaipėdoje – sertifikuota LPG Alliance kūno procedūra kūno kontūrams, odos stangrumui ir lengvumo pojūčiui. Kaina nuo 35 €. Registruokitės „Kūno Linija“ kabinete.">
     <title>LPG masažas Klaipėdoje | Kūno Linija – LPG Alliance procedūra</title>
 
+    <link rel="canonical" href="https://kunolinija.lt/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kūno Linija">
+    <meta property="og:locale" content="lt_LT">
+    <meta property="og:title" content="LPG masažas Klaipėdoje | Kūno Linija – LPG Alliance procedūra">
+    <meta property="og:description" content="Sertifikuota LPG Alliance kūno procedūra kūno kontūrams, odos stangrumui ir lengvumo pojūčiui Klaipėdoje. Kaina nuo 35 €. Registruokitės vizitui.">
+    <meta property="og:url" content="https://kunolinija.lt/">
+    <meta property="og:image" content="https://kunolinija.lt/images/og-kunolinija.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LPG masažas Klaipėdoje | Kūno Linija – LPG Alliance procedūra">
+    <meta name="twitter:description" content="Sertifikuota LPG Alliance kūno procedūra kūno kontūrams ir odos stangrumui Klaipėdoje. Kaina nuo 35 €.">
+    <meta name="twitter:image" content="https://kunolinija.lt/images/og-kunolinija.jpg">
+
+    <link rel="preload" as="image" href="images/fonas-hero.webp" type="image/webp">
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" href="favicon.svg" sizes="any">
     <link rel="apple-touch-icon" href="favicon.svg">
@@ -20,6 +38,9 @@
       "@context": "https://schema.org",
       "@type": "HealthAndBeautyBusiness",
       "name": "Kūno Linija",
+      "url": "https://kunolinija.lt/",
+      "image": "https://kunolinija.lt/images/og-kunolinija.jpg",
+      "sameAs": ["https://www.facebook.com/KunolinijaKlaipeda/"],
       "description": "LPG Alliance kūno procedūra Klaipėdoje – kūno kontūrai, odos stangrumas, limfos tekėjimas.",
       "address": { "@type": "PostalAddress", "streetAddress": "Šermukšnių g. 15", "addressLocality": "Klaipėda", "addressCountry": "LT" },
       "telephone": "+37063656181",
@@ -191,11 +212,11 @@
         /* VAIZDO sluoksnis – tik jis animuojamas (zoom + pan) */
         .hero::before {
             content: ""; position: absolute; inset: 0; z-index: 0;
-            /* Pirmenybė aukštos raiškos failui; jei jo nėra – graceful fallback į PNG */
-            background-image:
-                url('images/fonas-hero.webp'),
-                url('images/fonas-hero.jpg'),
-                url('images/fonas.png');
+            /* WebP su JPG atsarginiu variantu senesnėms naršyklėms */
+            background-image: url('images/fonas-hero.jpg');
+            background-image: image-set(
+                url('images/fonas-hero.webp') type('image/webp'),
+                url('images/fonas-hero.jpg') type('image/jpeg'));
             background-size: cover; background-position: center 65%; background-repeat: no-repeat;
             transform-origin: center center;
             transform: scale(1.04) translate3d(0, 0, 0);
@@ -889,7 +910,7 @@
                     <p>„Kūno Linija“ kabinete Klaipėdoje procedūros atliekamos naujos kartos LPG Cellu&nbsp;M6 Alliance Premium aparatu. Tai neinvazinė kūno procedūra, padedanti gerinti odos stangrumą, skatinti limfos tekėjimą, mažinti patinimų pojūtį ir dailinti kūno kontūrus.</p>
                 </div>
                 <div class="media">
-                    <video autoplay muted loop playsinline preload="metadata" poster="images/fonas.png" aria-label="LPG Alliance procedūra „Kūno Linija“ kabinete Klaipėdoje">
+                    <video autoplay muted loop playsinline preload="metadata" poster="images/fonas-hero.jpg" aria-label="LPG Alliance procedūra „Kūno Linija“ kabinete Klaipėdoje">
                         <source src="video/lpg-procedura-klaipeda.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -1012,14 +1033,14 @@
                         <button type="button" class="result-slide" data-full="images/rezultatai2.jpg" aria-label="Padidinti rezultato nuotrauką — juosmens sritis">
                             <img src="images/rezultatai2.jpg" alt="LPG procedūrų rezultatas — juosmens sritis" loading="lazy">
                         </button>
-                        <button type="button" class="result-slide is-crop-left" data-full="images/rezultatai5.png" aria-label="Padidinti rezultato nuotrauką — pilvo ir šlaunų sritis">
-                            <img src="images/rezultatai5.png" alt="LPG procedūrų rezultatas — pilvo ir šlaunų sritis" loading="lazy">
+                        <button type="button" class="result-slide is-crop-left" data-full="images/rezultatai5.webp" aria-label="Padidinti rezultato nuotrauką — pilvo ir šlaunų sritis">
+                            <img src="images/rezultatai5.webp" alt="LPG procedūrų rezultatas — pilvo ir šlaunų sritis" loading="lazy">
                         </button>
-                        <button type="button" class="result-slide" data-full="images/rezultatai7.png" aria-label="Padidinti rezultato nuotrauką — kūno kontūrai iš šono">
-                            <img src="images/rezultatai7.png" alt="LPG procedūrų rezultatas — kūno kontūrai (šoninis vaizdas)" loading="lazy">
+                        <button type="button" class="result-slide" data-full="images/rezultatai7.webp" aria-label="Padidinti rezultato nuotrauką — kūno kontūrai iš šono">
+                            <img src="images/rezultatai7.webp" alt="LPG procedūrų rezultatas — kūno kontūrai (šoninis vaizdas)" loading="lazy">
                         </button>
-                        <button type="button" class="result-slide" data-full="images/rezultatai6.png" aria-label="Padidinti rezultato nuotrauką — šlaunų sritis">
-                            <img src="images/rezultatai6.png" alt="LPG procedūrų rezultatas — šlaunų sritis" loading="lazy">
+                        <button type="button" class="result-slide" data-full="images/rezultatai6.webp" aria-label="Padidinti rezultato nuotrauką — šlaunų sritis">
+                            <img src="images/rezultatai6.webp" alt="LPG procedūrų rezultatas — šlaunų sritis" loading="lazy">
                         </button>
                     </div>
                     <button type="button" class="rc-nav rc-next" aria-label="Kitos nuotraukos">&#8250;</button>
